@@ -23,7 +23,7 @@ export default function Pagination({
   };
 
   return (
-    <nav className="flex items-center justify-center gap-3 py-8">
+    <nav className="flex items-center justify-center gap-3 py-4">
       <button
         onClick={() => goTo(currentPage - 1)}
         aria-label="Previous page"

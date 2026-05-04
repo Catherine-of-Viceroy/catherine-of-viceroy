@@ -42,6 +42,7 @@ export default function LandingCarousel({
   const [currentIndex, setCurrentIndex] = useState(1);
   const [targetIndex, setTargetIndex] = useState(1);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
 
   const currentItem = carouselItems[currentIndex];
   const isCurrentVideo = currentItem?.isVideo;
@@ -112,6 +113,7 @@ export default function LandingCarousel({
   useEffect(() => {
     if (realItemCount <= 1) return;
     if (isAnimating) return;
+    if (isPaused) return;
 
     clearTimer();
 
@@ -144,7 +146,7 @@ export default function LandingCarousel({
     return () => {
       clearTimer();
     };
-  }, [currentIndex, isCurrentVideo, interval, realItemCount, isAnimating, carouselItems.length, clearTimer]);
+  }, [currentIndex, isCurrentVideo, interval, realItemCount, isAnimating, isPaused, carouselItems.length, clearTimer]);
 
   // Handle video autoplay when it becomes current
   useEffect(() => {
@@ -161,6 +163,7 @@ export default function LandingCarousel({
   const translateX = -currentIndex * 100;
 
   return (
+    <div className="flex flex-col">
     <div className="relative" style={{ width: 870, height: 600 }}>
       {/* Sliding Track */}
       <div className="relative w-full h-full overflow-hidden bg-zinc-900">
@@ -239,5 +242,23 @@ export default function LandingCarousel({
         </div>
       )}
     </div>
+    {/* Pause/Resume Button */}
+      {realItemCount > 1 && (
+        <div className="flex justify-center items-center p-2">
+          <button
+            onClick={() => setIsPaused(!isPaused)}
+            className="p-2 rounded-full bg-black/50 hover:bg-black/70 transition-colors z-10"
+            aria-label={isPaused ? "Resume auto-play" : "Pause auto-play"}
+          >
+            <img
+              src={isPaused ? "/images/play.svg" : "/images/pause.svg"}
+              alt={isPaused ? "Play" : "Pause"}
+              width={50}
+              height={50}
+            />
+          </button>
+        </div>
+      )}
+      </div>
   );
 }

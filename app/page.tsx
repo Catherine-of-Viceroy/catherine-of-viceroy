@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center bg-zinc-50 font-sans dark:bg-black w-full max-w-[1440px] mx-auto">
       <Header />
-      <div className="flex justify-center items-center py-8">
+      <div className="flex justify-center items-center">
         <LandingCarousel items={landingItems} interval={6000} />
       </div>
       <Pagination currentPage={1} totalPages={11} />
