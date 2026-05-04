@@ -69,7 +69,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
     <div className="flex flex-col flex-1 items-center bg-zinc-50 font-sans dark:bg-black px-[60px] w-full max-w-[1440px] mx-auto">
       <Header />
       {renderContent()}
-      <Pagination currentPage={parseInt(id)} totalPages={11} />
+      <Pagination currentPage={parseInt(id)} totalPages={10} />
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function Home() {
       <div className="flex justify-center items-center">
         <LandingCarousel items={landingItems} interval={6000} />
       </div>
-      <Pagination currentPage={1} totalPages={11} />
+      <Pagination currentPage={1} totalPages={10} />
     </div>
   );
 }

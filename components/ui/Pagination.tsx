@@ -9,7 +9,7 @@ interface PaginationProps {
 
 export default function Pagination({
   currentPage,
-  totalPages = 11,
+  totalPages = 10,
 }: PaginationProps) {
   const router = useRouter();
 
