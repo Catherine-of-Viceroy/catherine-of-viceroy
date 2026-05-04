@@ -1,19 +1,7 @@
 import Header from "@/components/ui/Header";
 import LandingCarousel from "@/components/ui/LandingCarousel";
 import Pagination from "@/components/ui/Pagination";
-
-const landingItems = [
-  {
-    url: "https://placehold.co/870x600",
-    alt: "Landing image 1",
-    isVideo: false,
-  },
-  {
-    url: "https://placehold.co/870x600",
-    alt: "Landing image 2",
-    isVideo: false,
-  },
-];
+import landingItems from "@/data/landing.json";
 
 export default function Home() {
   return (
