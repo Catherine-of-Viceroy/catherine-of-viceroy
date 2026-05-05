@@ -16,10 +16,10 @@ export default async function StoryPage({ params }: StoryPageProps) {
       return <div>Story not found</div>;
     }
     return story.map((story) => (
-      <div key={story.id}>
+      <div key={story.id} className="w-full py-10">
       {story.layout == "full" && (
         <div>
-          <h2>{story.title}</h2>
+          {story.title && <h2>{story.title}</h2>} 
           {story.content.map((content, index) => (
             <p key={index}>{content}</p>
           ))}
@@ -30,7 +30,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
           key={story.id}
           right={
             <div>
-              <h2>{story.title}</h2>
+              {story.title && <h2>{story.title}</h2>}
               {story.content.map((content, index) => (
                 <p key={index}>{content}</p>
               ))}
@@ -45,12 +45,27 @@ export default async function StoryPage({ params }: StoryPageProps) {
               <div className="flex justify-start gap-4">
                 {story.images
                   .filter((image) => image.url)
-                  .map((image, index) => (
-                    <img key={index} src={image.url} alt={story.title} className="w-full h-auto object-cover flex-1 max-w-[48%]" style={{ borderRadius: (image as { borderRadius?: string }).borderRadius ?? "0" }} />
-                  ))}
+                  .map((image, index) => {
+                    const img = image as { url: string; borderRadius?: string; width?: string | number; height?: string | number };
+                    const width = img.width ?? 400;
+                    const height = img.height ?? 600;
+                    return (
+                      <img
+                        key={index}
+                        src={image.url}
+                        alt={story.title}
+                        width={width}
+                        height={height}
+                        className="object-cover"
+                        style={{ borderRadius: img.borderRadius ?? "0" }}
+                      />
+                    );
+                  })}
               </div>
             )
           }
+          leftSize="w-1/3"
+          rightSize="w-2/3"
         />
       )}
       {story.layout == "half" && story.imagePosition == "right" && (
@@ -58,7 +73,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
           key={story.id}
           left={
             <div>
-              <h2>{story.title}</h2>
+              {story.title && <h2>{story.title}</h2>}
               {story.content.map((content, index) => (
                 <p key={index}>{content}</p>
               ))}
@@ -73,12 +88,27 @@ export default async function StoryPage({ params }: StoryPageProps) {
               <div className="flex justify-end gap-4">
                 {story.images
                   .filter((image) => image.url)
-                  .map((image, index) => (
-                    <img key={index} src={image.url} alt={story.title} className="w-full h-auto object-cover flex-1 max-w-[48%]" style={{ borderRadius: (image as { borderRadius?: string }).borderRadius ?? "0" }} />
-                  ))}
+                  .map((image, index) => {
+                    const img = image as { url: string; borderRadius?: string; width?: string | number; height?: string | number };
+                    const width = img.width ?? 400;
+                    const height = img.height ?? 600;
+                    return (
+                      <img
+                        key={index}
+                        src={image.url}
+                        alt={story.title}
+                        width={width}
+                        height={height}
+                        className="object-cover"
+                        style={{ borderRadius: img.borderRadius ?? "0" }}
+                      />
+                    );
+                  })}
               </div>
             )
           }
+          leftSize="w-2/3"
+          rightSize="w-1/3"
         />
       )}
       </div>

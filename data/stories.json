@@ -13,12 +13,14 @@
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%202/01.jpg",
         "isVideo": false,
-        "borderRadius": "1rem"
+        "borderRadius": "1rem",
+        "width": "48%"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%202/02.jpg",
         "isVideo": false,
-        "borderRadius": "1rem"
+        "borderRadius": "1rem",
+        "width": "48%"
       }
 
     ],
@@ -322,7 +324,8 @@
     "images": [
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/static.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -430,7 +433,8 @@
     "images": [
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/IMG_1114%20static.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -549,7 +553,8 @@
     "images": [
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/static.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
