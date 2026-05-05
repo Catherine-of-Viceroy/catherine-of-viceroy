@@ -80,3 +80,6 @@ h1,h2,h3,h4,h5,h6,p {
   display: flex;
   justify-content: flex-end;
 }
+img {
+  background: #000;
+}

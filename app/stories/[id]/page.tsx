@@ -37,9 +37,19 @@ export default async function StoryPage({ params }: StoryPageProps) {
             </div>
           }
           left={
-            <div className="flex justify-start">
-              <ImageCarousel images={story.images} />
-            </div>
+            story.isImageCarousel ? (
+              <div className="flex justify-start">
+                <ImageCarousel images={story.images} />
+              </div>
+            ) : (
+              <div className="flex justify-start gap-4">
+                {story.images
+                  .filter((image) => image.url)
+                  .map((image, index) => (
+                    <img key={index} src={image.url} alt={story.title} className="w-full h-auto object-cover flex-1 max-w-[48%]" style={{ borderRadius: (image as { borderRadius?: string }).borderRadius ?? "0" }} />
+                  ))}
+              </div>
+            )
           }
         />
       )}
@@ -55,9 +65,19 @@ export default async function StoryPage({ params }: StoryPageProps) {
             </div>
           }
           right={
-            <div className="flex justify-end">
-              <ImageCarousel images={story.images} />
-            </div>
+            story.isImageCarousel ? (
+              <div className="flex justify-end">
+                <ImageCarousel images={story.images} />
+              </div>
+            ) : (
+              <div className="flex justify-end gap-4">
+                {story.images
+                  .filter((image) => image.url)
+                  .map((image, index) => (
+                    <img key={index} src={image.url} alt={story.title} className="w-full h-auto object-cover flex-1 max-w-[48%]" style={{ borderRadius: (image as { borderRadius?: string }).borderRadius ?? "0" }} />
+                  ))}
+              </div>
+            )
           }
         />
       )}

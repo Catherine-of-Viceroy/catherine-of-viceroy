@@ -11,9 +11,16 @@
     ],
     "images": [
       {
-        "url": "https://placehold.co/400x600",
-        "isVideo": false
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%202/01.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%202/02.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
+
     ],
     "layout": "half",
     "imagePosition": "right",
@@ -38,12 +45,7 @@
       "A red canvas tote bag from mom's preferred bakery was put into service. Basic kit consisted of a comb, a brush, a gel and a pink two speed travel hairdryer.",
       "So with the basic kit organized, onwards and upwards. Over time, however, the basics list expanded to include a selection of pressed face powders, a black knit scarf, a mousse, a binder clip, a 'structured lapel', and a black velvet elastic-waisted pant."
     ],
-    "images": [
-      {
-        "url": "https://placehold.co/400x600",
-        "isVideo": false
-      }
-    ],
+    "images": [],
     "layout": "full",
     "isImageCarousel":false
   },
@@ -57,14 +59,9 @@
       "The launch 'comfort' collection spans the range of basic blouses, cotton tops and elastic-waisted pants that originated from her own closet. For safekeeping, her finer sweaters and scarves are kept with me.",
       "With grateful thanks to the facility, over time they donated several 'accessible' blouses for her use. The backs were ripped down the middle from yoke to hem. The resulting garment allows even the most frail among us to look presentable with no effort expended. Brilliant. Mix and match; try this and that. Keep a loose tab on what pieces in what combinations made the family film archive; would hate for hindsight to spotlight an exact duplicate."
     ],
-    "images": [
-      {
-        "url": "",
-        "isVideo": false
-      }
-    ],
+    "images": [],
     "layout": "full",
-    "isImageCarousel":false
+    "isImageCarousel":true
   },
   {
     "id": 4,
@@ -79,20 +76,14 @@
     ],
     "images": [
       {
-        "url": "https://placehold.co/400x600",
-        "isVideo": false
-      },
-      {
-        "url": "https://placehold.co/400x600",
-        "isVideo": false
-      },{
-        "url": "https://placehold.co/400x600",
-        "isVideo": false
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/static.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
     "imagePosition": "right",
-    "isImageCarousel": true
+    "isImageCarousel": false
   },
   {
     "id": 5,
@@ -107,15 +98,79 @@
     ],
     "images": [
       {
-        "url": "https://placehold.co/400x600",
-        "isVideo": false
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0356.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
-        "url": "https://placehold.co/400x600",
-        "isVideo": false
-      },{
-        "url": "https://placehold.co/400x600",
-        "isVideo": false
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0374.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0507.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0560.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0572.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0641.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0678.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0685.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0714.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0773.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0789.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0821.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_1704.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"  
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_4668.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_4691.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -133,34 +188,47 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_3443.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_3764.jpg",
+        "isVideo": false
+      },{
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_3941.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_4826.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_4919.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_4981.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_5016.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_5165.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_5980.jpg",
         "isVideo": false
       }
     ],
     "layout": "half",
     "imagePosition": "right",
-    "isImageCarousel": false
+    "isImageCarousel": true
   },
   {
     "id": 7,
-    "pageId": 4,
-    "title": "",
-    "subtitle": "",
-    "content": [
-      "The 'colours' collection received a late-season course correction with the introduction of ladies polyester elastic-waisted pants. The pants are dangling out back with the legs draped forward over the shoulders.",
-      "The lens appreciates the iridescent qualities of the fabric. The stylist appreciates its natural resistance to wrinkles. Validation and success of this concept meant including other ladies polyester elastic-waisted pants later in the series; look for navy blue, purple, teal, coral, olive drab."
-    ],
-    "images": [
-      {
-        "url": "",
-        "isVideo": false
-      }
-    ],
-    "layout": "half",
-    "imagePosition": "left"
-  },
-  {
-    "id": 8,
     "pageId": 4,
     "title": "",
     "subtitle": "",
@@ -172,16 +240,40 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0356.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0374.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0507.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0560.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0572.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0641.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0678.jpg",
         "isVideo": false
       }
     ],
     "layout": "half",
     "imagePosition": "right",
-    "isImageCarousel": false
+    "isImageCarousel": true
   },
   {
-    "id": 9,
+    "id": 8,
     "pageId": 4,
     "title": "",
     "subtitle": "",
@@ -190,16 +282,36 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_3443.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_3764.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_3941.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_4826.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_4919.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_4981.jpg",
         "isVideo": false
       }
     ],
     "layout": "half",
     "imagePosition": "left",
-    "isImageCarousel": false
+    "isImageCarousel": true
   },
   {
-    "id": 10,
+    "id": 9,
     "pageId": 4,
     "title": "",
     "subtitle": "",
@@ -209,7 +321,7 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/static.jpg",
         "isVideo": false
       }
     ],
@@ -218,7 +330,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 11,
+    "id": 10,
     "pageId": 5,
     "title": "",
     "subtitle": "",
@@ -227,16 +339,44 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_0450.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_0560.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_1934.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_2145.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_2230.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_4540.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_5191.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_5200.jpg",
         "isVideo": false
       }
     ],
     "layout": "half",
     "imagePosition": "right",
-    "isImageCarousel": false
+    "isImageCarousel": true
   },
   {
-    "id": 12,
+    "id": 11,
     "pageId": 5,
     "title": "",
     "subtitle": "",
@@ -245,16 +385,40 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_0475.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_0685.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_0925.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_0954.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_5472.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_5485.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_5557.jpg",
         "isVideo": false
       }
     ],
     "layout": "half",
     "imagePosition": "left",
-    "isImageCarousel": false
+    "isImageCarousel": true
   },
   {
-    "id": 13,
+    "id": 12,
     "pageId": 5,
     "title": "",
     "subtitle": "",
@@ -265,7 +429,7 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/IMG_1114%20static.jpg",
         "isVideo": false
       }
     ],
@@ -274,8 +438,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 14,
-    "pageId": 5,
+    "id": 13,
+    "pageId": 6,
     "title": "",
     "subtitle": "",
     "content": [
@@ -284,17 +448,65 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_1555.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_1934.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2139.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2581.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2592.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2693.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2802.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3099.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3234.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3269.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3275.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3308.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3562.jpg",
         "isVideo": false
       }
     ],
     "layout": "half",
     "imagePosition": "right",
-    "isImageCarousel": false
+    "isImageCarousel": true
   },
   {
-    "id": 15,
-    "pageId": 5,
+    "id": 14,
+    "pageId": 6,
     "title": "",
     "subtitle": "",
     "content": [
@@ -302,7 +514,41 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_1704.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_1934.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_2230.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_5191.jpg",
+        "isVideo": false
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_5200.jpg",
+        "isVideo": false
+      }
+    ],
+    "layout": "half",
+    "imagePosition": "left",
+    "isImageCarousel": true
+  },
+  {
+    "id": 15,
+    "pageId": 6,
+    "title": "",
+    "subtitle": "",
+    "content": [
+      "Christmas Day 2021 and mom is sporting a lovely new bed jacket. Thank you, Christmas Angel."
+    ],
+    "images": [
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/static.jpg",
         "isVideo": false
       }
     ],
@@ -312,25 +558,7 @@
   },
   {
     "id": 16,
-    "pageId": 6,
-    "title": "",
-    "subtitle": "",
-    "content": [
-      "Christmas Day 2021 and mom is sporting a lovely new bed jacket. Thank you, Christmas Angel."
-    ],
-    "images": [
-      {
-        "url": "",
-        "isVideo": false
-      }
-    ],
-    "layout": "half",
-    "imagePosition": "left",
-    "isImageCarousel": false
-  },
-  {
-    "id": 17,
-    "pageId": 6,
+    "pageId": 7,
     "title": "",
     "subtitle": "",
     "content": [
@@ -348,8 +576,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 18,
-    "pageId": 6,
+    "id": 17,
+    "pageId": 7,
     "title": "",
     "subtitle": "",
     "content": [
@@ -362,12 +590,12 @@
       }
     ],
     "layout": "half",
-    "imagePosition": "right",
+    "imagePosition": "left",
     "isImageCarousel": false
   },
   {
-    "id": 19,
-    "pageId": 6,
+    "id": 18,
+    "pageId": 7,
     "title": "",
     "subtitle": "",
     "content": [
@@ -384,8 +612,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 20,
-    "pageId": 7,
+    "id": 19,
+    "pageId": 8,
     "title": "",
     "subtitle": "",
     "content": [
@@ -402,8 +630,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 21,
-    "pageId": 7,
+    "id": 20,
+    "pageId": 8,
     "title": "",
     "subtitle": "",
     "content": [
@@ -420,8 +648,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 22,
-    "pageId": 7,
+    "id": 21,
+    "pageId": 8,
     "title": "",
     "subtitle": "",
     "content": [
@@ -439,8 +667,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 23,
-    "pageId": 8,
+    "id": 22,
+    "pageId": 9,
     "title": "",
     "subtitle": "",
     "content": [
@@ -458,8 +686,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 24,
-    "pageId": 8,
+    "id": 23,
+    "pageId": 9,
     "title": "",
     "subtitle": "",
     "content": [
@@ -477,8 +705,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 25,
-    "pageId": 1,
+    "id": 24,
+    "pageId": 9,
     "title": "",
     "subtitle": "",
     "content": [
@@ -496,27 +724,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 26,
-    "pageId": 8,
-    "title": "",
-    "subtitle": "",
-    "content": [
-      "The 'couture' collection ascended to symbolically mourn as our Sovereign lay in state. It is quite the irony that just two pieces of a noteworthy fabric and a simple piece of jewellery, if nothing else, is all it takes.",
-      "In recent photos up to this point, and all those going forward, the model would have just come from a warm air blowout, scalp massage/mousse application, full scalp brushing, styling & sculpting of the coif, and artful application of the pressed face powders."
-    ],
-    "images": [
-      {
-        "url": "",
-        "isVideo": false
-      }
-    ],
-    "layout": "half",
-    "imagePosition": "left",
-    "isImageCarousel": false
-  },
-  {
-    "id": 27,
-    "pageId":9,
+    "id": 25,
+    "pageId":10,
     "title": "SPA, HAIR , MAKEUP FOR  THE STATIC CENTENARIAN WOMAN...",
     "subtitle": "",
     "content": [
@@ -542,26 +751,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 28,
-    "pageId": 9,
-    "title": "STYLING TECHNIQUES FOR THE ACTIVE-APPEARING CENTENARIAN WOMAN...",
-    "subtitle": "",
-    "content": [
-      "Had the attendant dressed her in a blouse or tee with high polyester or rayon content, additional attention is required as its lower coefficient of friction would allow my layered efforts to slip into unacceptability. All the while hoping the model won't succumb to a sneeze or itch. And for these few wonderful minutes, everything is bliss. Another memory is born.",
-      "And had the day started with a chill, the attendant may have added a sweater to her ensemble. The extra thickness of fabric under my additional layering may look odd, so I'd unbutton the sweater and gently tug until it was secure off her shoulders."
-    ],
-    "images": [
-      {
-        "url": "",
-        "isVideo": false
-      }
-    ],
-    "layout": "full",
-    "imagePosition": "right",
-    "isImageCarousel": false
-  },
-  {
-    "id": 29,
+    "id": 26,
     "pageId": 10,
     "title": "STYLING TECHNIQUES FOR THE ACTIVE-APPEARING CENTENARIAN WOMAN...",
     "subtitle": "",
@@ -580,7 +770,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 30,
+    "id": 27,
     "pageId": 10,
     "title": "",
     "subtitle": "",
@@ -601,7 +791,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 31,
+    "id": 28,
     "pageId": 10,
     "title": "",
     "subtitle": "",
@@ -615,7 +805,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 32,
+    "id": 29,
     "pageId": 10,
     "title": "",
     "subtitle": "",
@@ -641,7 +831,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 33,
+    "id": 30,
     "pageId": 10,
     "title": "",
     "subtitle": "",
@@ -653,8 +843,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 34,
-    "pageId": 10,
+    "id": 31,
+    "pageId": 11,
     "title": "STAGING TECHNIQUES TO PHOTOGRAPH A FRAIL CENTENARIAN WOMAN...",
     "subtitle": "",
     "content": [
@@ -670,8 +860,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 35,
-    "pageId": 10,
+    "id": 32,
+    "pageId": 11,
     "title": "",
     "subtitle": "",
     "content": [],
@@ -691,8 +881,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 36,
-    "pageId": 10,
+    "id": 33,
+    "pageId": 11,
     "title": "",
     "subtitle": "",
     "content": [
@@ -706,8 +896,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 37,
-    "pageId": 10,
+    "id": 34,
+    "pageId": 11,
     "title": "PHOTOGRAPHING A WHEELCHAIR-BOUND CENTENARIAN WOMAN...",
     "subtitle": "",
     "content": [
@@ -722,8 +912,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 38,
-    "pageId": 10,
+    "id": 35,
+    "pageId": 11,
     "title": "CONVERSING WITH A CENTENARIAN WOMAN WITH MEMORY ISSUES...",
     "subtitle": "",
     "content": [      
@@ -740,8 +930,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 39,
-    "pageId": 10,
+    "id": 36,
+    "pageId": 11,
     "title": "AND THE ALL IMPORTANT SHOUT OUTS...",
     "subtitle": "",
     "content": [
@@ -757,8 +947,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 40,
-    "pageId": 10,
+    "id": 37,
+    "pageId": 11,
     "title": "AND WHAT ABOUT ME...",
     "subtitle": "",
     "content": [
@@ -773,8 +963,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 41,
-    "pageId": 10,
+    "id": 38,
+    "pageId": 11,
     "title": "AND FINALLY, SOME RANDOM THOUGHTS...",
     "subtitle": "",
     "content": [
@@ -787,8 +977,8 @@
     "isImageCarousel": false
   },
   {
-    "id": 42,
-    "pageId": 10,
+    "id": 39,
+    "pageId": 11,
     "title": "",
     "subtitle": "",
     "content": [

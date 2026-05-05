@@ -21,10 +21,8 @@ export default function ImageCarousel({
   width = 400,
   height = 600,
 }: ImageCarouselProps) {
-  const [displayIndex, setDisplayIndex] = useState(0);
-  const [targetIndex, setTargetIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [isTransitioning, setIsTransitioning] = useState(true);
 
   // Filter out images with empty URLs
   const validImages = images.filter((img) => img.url && img.url.trim() !== "");
@@ -33,71 +31,108 @@ export default function ImageCarousel({
     return null;
   }
 
-  const currentImage = validImages[displayIndex];
+  // Create infinite carousel items: [last, ...items, first]
+  const carouselItems = [
+    validImages[validImages.length - 1],
+    ...validImages,
+    validImages[0],
+  ];
+
+  // Start at index 1 (first real item)
+  const [currentIndex, setCurrentIndex] = useState(1);
+  const [targetIndex, setTargetIndex] = useState(1);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const realImageCount = validImages.length;
+  const realIndex = ((currentIndex - 1 + realImageCount) % realImageCount);
 
   // Move one step toward target
   const stepTowardTarget = useCallback(() => {
-    setDisplayIndex((prev) => {
+    setCurrentIndex((prev) => {
       if (prev === targetIndex) {
         setIsAnimating(false);
         return prev;
       }
-      // Move backward (decrement) when target is less than current
       if (targetIndex < prev) {
         return prev - 1;
       }
-      // Move forward (increment) when target is greater than current
       return prev + 1;
     });
   }, [targetIndex]);
 
   // Handle target index changes - animate step by step
   useEffect(() => {
-    if (displayIndex === targetIndex) {
+    if (currentIndex === targetIndex) {
       setIsAnimating(false);
       return;
     }
 
     setIsAnimating(true);
+    setIsTransitioning(true);
     const stepTimer = setTimeout(() => {
       stepTowardTarget();
-    }, 400); // Time for each slide step
+    }, 400);
 
     return () => clearTimeout(stepTimer);
-  }, [targetIndex, displayIndex, stepTowardTarget]);
+  }, [targetIndex, currentIndex, stepTowardTarget]);
+
+  // Handle infinite wrap-around after transition
+  useEffect(() => {
+    if (!isTransitioning) return;
+
+    const timer = setTimeout(() => {
+      // If we're at the clone of first (end), jump to real first
+      if (currentIndex === carouselItems.length - 1) {
+        setIsTransitioning(false);
+        setCurrentIndex(1);
+        setTargetIndex(1);
+      }
+      // If we're at the clone of last (beginning), jump to real last
+      else if (currentIndex === 0) {
+        setIsTransitioning(false);
+        setCurrentIndex(realImageCount);
+        setTargetIndex(realImageCount);
+      }
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [currentIndex, carouselItems.length, isTransitioning, realImageCount]);
 
   const goToPrevious = () => {
     if (isAnimating) return;
-    const newTarget = displayIndex === 0 ? validImages.length - 1 : displayIndex - 1;
-    setTargetIndex(newTarget);
+    setTargetIndex((prev) => prev - 1);
     setIsLoading(true);
   };
 
   const goToNext = () => {
     if (isAnimating) return;
-    const newTarget = displayIndex === validImages.length - 1 ? 0 : displayIndex + 1;
-    setTargetIndex(newTarget);
+    setTargetIndex((prev) => prev + 1);
     setIsLoading(true);
   };
 
   const handleImageChange = (index: number) => {
-    if (isAnimating || index === displayIndex) return;
-    setTargetIndex(index);
+    if (isAnimating) return;
+    // Calculate target in carousel (add 1 for the clone at start)
+    const carouselTarget = index + 1;
+    setTargetIndex(carouselTarget);
     setIsLoading(true);
   };
 
   // Calculate transform offset
-  const translateX = -displayIndex * 100;
+  const translateX = -currentIndex * 100;
 
   return (
     <div className="relative" style={{ width, height }}>
       {/* Sliding Track */}
       <div className="relative w-full h-full overflow-hidden rounded-lg bg-zinc-900">
         <div
-          className="flex h-full transition-transform duration-500 ease-out"
-          style={{ transform: `translateX(${translateX}%)` }}
+          className="flex h-full"
+          style={{
+            transform: `translateX(${translateX}%)`,
+            transition: isTransitioning ? "transform 500ms ease-out" : "none",
+          }}
         >
-          {validImages.map((image, index) => (
+          {carouselItems.map((image, index) => (
             <div
               key={index}
               className="relative flex-shrink-0 w-full h-full"
@@ -110,7 +145,7 @@ export default function ImageCarousel({
                 />
               ) : (
                 <>
-                  {isLoading && index === displayIndex && (
+                  {isLoading && index === currentIndex && (
                     <div className="absolute inset-0 bg-zinc-800 animate-pulse" />
                   )}
                   <Image
@@ -119,11 +154,11 @@ export default function ImageCarousel({
                     fill
                     className="object-cover"
                     onLoad={() => {
-                      if (index === displayIndex) setIsLoading(false);
+                      if (index === currentIndex) setIsLoading(false);
                     }}
                     sizes={`${width}px`}
                     unoptimized
-                    priority={index === 0}
+                    priority={index === 1}
                   />
                 </>
               )}
@@ -158,7 +193,7 @@ export default function ImageCarousel({
                 key={index}
                 onClick={() => handleImageChange(index)}
                 className={`w-2 h-2 rounded-full transition-colors ${
-                  index === displayIndex ? "bg-white" : "bg-white/50"
+                  index === realIndex ? "bg-white" : "bg-white/50"
                 }`}
                 aria-label={`Go to image ${index + 1}`}
               />
