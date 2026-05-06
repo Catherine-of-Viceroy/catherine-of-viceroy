@@ -11,9 +11,9 @@ export default function Header() {
         priority
       />
 
-      <p className="text-sm tracking-widest uppercase text-zinc-500">
+      <h3 className="text-sm tracking-widest uppercase text-white">
         Styling for the modern centenarian woman
-      </p>
+      </h3>
 
       <Image
         src="/images/accent.svg"

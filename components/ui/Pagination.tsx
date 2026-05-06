@@ -38,11 +38,11 @@ export default function Pagination({
           onClick={() => goTo(page)}
           aria-label={`Page ${page}`}
           aria-current={page === currentPage ? "page" : undefined}
-          className={`flex h-5 w-5 items-center justify-center rounded-full border text-sm font-medium transition-colors
+          className={`flex h-5 w-5 items-center justify-center rounded-full border-white/20 text-sm font-medium transition-colors
             ${
               page === currentPage
                 ? "border-white bg-white text-black"
-                : "border-white/20 text-white hover:bg-white/10"
+                : "border-white/20 bg-white/20 text-white/20 hover:border-white/30 hover:bg-white/30"
             }`}
         >
         </button>
