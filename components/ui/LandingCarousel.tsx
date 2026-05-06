@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface CarouselItem {
   url: string;
@@ -42,20 +43,12 @@ export default function LandingCarousel({
   const [currentIndex, setCurrentIndex] = useState(1);
   const [targetIndex, setTargetIndex] = useState(1);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
 
   const currentItem = carouselItems[currentIndex];
   const isCurrentVideo = currentItem?.isVideo;
   const realItemCount = validItems.length;
   const realIndex = ((currentIndex - 1 + realItemCount) % realItemCount);
 
-  // Clear timer helper
-  const clearTimer = useCallback(() => {
-    if (timerRef.current) {
-      clearTimeout(timerRef.current);
-      timerRef.current = null;
-    }
-  }, []);
 
   // Move one step toward target
   const stepTowardTarget = useCallback(() => {
@@ -109,55 +102,19 @@ export default function LandingCarousel({
     return () => clearTimeout(timer);
   }, [currentIndex, carouselItems.length, isTransitioning, realItemCount]);
 
-  // Auto-advance carousel
-  useEffect(() => {
-    if (realItemCount <= 1) return;
+
+  // Manual navigation
+  const goToPrevious = () => {
     if (isAnimating) return;
-    if (isPaused) return;
+    setTargetIndex((prev) => prev - 1);
+    setIsLoading(true);
+  };
 
-    clearTimer();
-
-    const goToNext = () => {
-      setTargetIndex((prev) => prev + 1);
-      setIsLoading(true);
-    };
-
-    // If current item is a video, wait for it to end
-    if (isCurrentVideo && videoRefs.current[currentIndex]) {
-      const video = videoRefs.current[currentIndex];
-      
-      const handleEnded = () => {
-        goToNext();
-      };
-
-      video.addEventListener("ended", handleEnded);
-      
-      return () => {
-        video?.removeEventListener("ended", handleEnded);
-        clearTimer();
-      };
-    } else {
-      // For images, use timeout
-      timerRef.current = setTimeout(() => {
-        goToNext();
-      }, interval);
-    }
-
-    return () => {
-      clearTimer();
-    };
-  }, [currentIndex, isCurrentVideo, interval, realItemCount, isAnimating, isPaused, carouselItems.length, clearTimer]);
-
-  // Handle video autoplay when it becomes current
-  useEffect(() => {
-    if (isCurrentVideo && videoRefs.current[currentIndex]) {
-      const video = videoRefs.current[currentIndex];
-      video.currentTime = 0;
-      video.play().catch(() => {
-        // Auto-play might be blocked by browser policy
-      });
-    }
-  }, [currentIndex, isCurrentVideo]);
+  const goToNext = () => {
+    if (isAnimating) return;
+    setTargetIndex((prev) => prev + 1);
+    setIsLoading(true);
+  };
 
   // Calculate transform offset
   const translateX = -currentIndex * 100;
@@ -242,23 +199,26 @@ export default function LandingCarousel({
         </div>
       )}
     </div>
-    {/* Pause/Resume Button */}
+    {/* Navigation Buttons */}
       {realItemCount > 1 && (
-        <div className="flex justify-center items-center p-2">
+        <div className="flex flex-row justify-end w-full items-end gap-2 mt-2">
           <button
-            onClick={() => setIsPaused(!isPaused)}
-            className="p-2 rounded-full bg-black/50 hover:bg-black/70 transition-colors z-10"
-            aria-label={isPaused ? "Resume auto-play" : "Pause auto-play"}
+            onClick={goToPrevious}
+            className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"
+            aria-label="Previous image"
           >
-            <img
-              src={isPaused ? "/images/play.svg" : "/images/pause.svg"}
-              alt={isPaused ? "Play" : "Pause"}
-              width={50}
-              height={50}
-            />
+            <ChevronLeft size={24} />
+          </button>
+
+          <button
+            onClick={goToNext}
+            className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"
+            aria-label="Next image"
+          >
+            <ChevronRight size={24} />
           </button>
         </div>
       )}
-      </div>
+    </div>
   );
 }
