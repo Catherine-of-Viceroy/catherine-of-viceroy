@@ -170,22 +170,6 @@ export default function ImageCarousel({
       {/* Navigation Buttons */}
       {validImages.length > 1 && (
         <>
-          <button
-            onClick={goToPrevious}
-            className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors z-10"
-            aria-label="Previous image"
-          >
-            <ChevronLeft size={24} />
-          </button>
-
-          <button
-            onClick={goToNext}
-            className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors z-10"
-            aria-label="Next image"
-          >
-            <ChevronRight size={24} />
-          </button>
-
           {/* Dots Indicator */}
           <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
             {validImages.map((_, index) => (
@@ -198,6 +182,23 @@ export default function ImageCarousel({
                 aria-label={`Go to image ${index + 1}`}
               />
             ))}
+          </div>
+          <div className="flex flex-row justify-end w-full items-end gap-2 mt-2">
+            <button
+              onClick={goToPrevious}
+              className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"
+              aria-label="Previous image"
+            >
+              <ChevronLeft size={24} />
+            </button>
+
+            <button
+              onClick={goToNext}
+              className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"
+              aria-label="Next image"
+            >
+              <ChevronRight size={24} />
+            </button>
           </div>
         </>
       )}
