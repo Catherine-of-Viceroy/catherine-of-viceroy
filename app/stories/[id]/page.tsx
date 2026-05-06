@@ -66,6 +66,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
           }
           leftSize="w-1/3"
           rightSize="w-2/3"
+          imagePosition="left"
         />
       )}
       {story.layout == "half" && story.imagePosition == "right" && (
@@ -109,6 +110,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
           }
           leftSize="w-2/3"
           rightSize="w-1/3"
+          imagePosition="right"
         />
       )}
       </div>
@@ -116,7 +118,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
   )};
 
   return (
-    <div className="flex flex-col flex-1 items-center bg-zinc-50 font-sans dark:bg-black px-[60px] w-full max-w-[1440px] mx-auto">
+    <div className="flex flex-col flex-1 items-center bg-zinc-50 font-sans dark:bg-black px-4 md:px-[60px] w-full max-w-[1440px] mx-auto">
       <Header />
       {renderContent()}
       <Pagination currentPage={parseInt(id)} totalPages={10} />

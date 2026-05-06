@@ -120,8 +120,8 @@ export default function LandingCarousel({
   const translateX = -currentIndex * 100;
 
   return (
-    <div className="flex flex-col">
-    <div className="relative" style={{ width: 870, height: 600 }}>
+    <div className="flex flex-col w-full">
+    <div className="relative w-full max-w-[870px] mx-auto" style={{ aspectRatio: "870/600" }}>
       {/* Sliding Track */}
       <div className="relative w-full h-full overflow-hidden bg-zinc-900">
         <div
