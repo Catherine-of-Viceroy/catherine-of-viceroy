@@ -573,7 +573,7 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false
       }
     ],
@@ -591,7 +591,7 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false
       }
     ],
@@ -609,7 +609,7 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false
       }
     ],
@@ -627,7 +627,7 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false
       }
     ],
@@ -645,7 +645,7 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false
       }
     ],
@@ -664,7 +664,7 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false
       }
     ],
@@ -683,7 +683,7 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false
       }
     ],
@@ -702,7 +702,7 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false
       }
     ],
@@ -721,7 +721,7 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false
       }
     ],
@@ -746,12 +746,7 @@
       "And without the distraction of an intermission, Act II gets underway with a dab of pressed face powder. Again, I come around front, compact in hand, and present it to her for inspection. She recognizes the brand name and acknowledges that with a slight nod. So with great fanfare, the lid opens, taking care not to fumble the small brush, delicately sweep the brush around the compact all the while chatting about how the chosen shade will go with the day's colour pick, and then gently apply the first stroke on her left cheek. She leans forward a bit to meet the brush half way. Her eyes follow the brush as it returns to the compact. Do a matching appliqué on her right cheek, and then onward for a seamless coverage. Perhaps a darker tone or two for a contour. The final appliqué is the darkest chocolate brown for her eyelids. She deftly knows the routine and briefly closes her eyes.",
       "And then, avoiding a sudden move, will carefully approach with her cleaned glasses and place them with precise tenderness."
     ],
-    "images": [
-      {
-        "url": "",
-        "isVideo": false
-      }
-    ],
+    "images": [],
     "layout": "full",
     "imagePosition": "right",
     "isImageCarousel": false
@@ -765,12 +760,7 @@
       "Had the attendant dressed her in a blouse or tee with high polyester or rayon content, additional attention is required as its lower coefficient of friction would allow my layered efforts to slip into unacceptability. All the while hoping the model won't succumb to a sneeze or itch. And for these few wonderful minutes, everything is bliss. Another memory is born.",
       "And had the day started with a chill, the attendant may have added a sweater to her ensemble. The extra thickness of fabric under my additional layering may look odd, so I'd unbutton the sweater and gently tug until it was secure off her shoulders."
     ],
-    "images": [
-      {
-        "url": "",
-        "isVideo": false
-      }
-    ],
+    "images": [],
     "layout": "full",
     "imagePosition": "right",
     "isImageCarousel": false
@@ -783,17 +773,17 @@
     "content": [],
     "images": [
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false,
         "description": "Long sleeves are a bonus as they can be wrapped around the neck to appear as a matching scarf. But should there be a cuff and placket, ensure it doesn't make it into the photo frame."
       },
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false,
         "description": "And from my perch, blouses fall into two categories: the obvious and the not-so-obvious being front button units which requires laying it on her chest backwards with the shoulder seams lined up exactly where they'd otherwise be. The ever-present scarf hides the gaps and tames any wave in the fabric."
       }
     ],
-    "layout": "two-column-cards",
+    "layout": "column-cards",
     "isImageCarousel": false
   },
   {
@@ -818,22 +808,22 @@
     "content": [],
     "images": [
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false,
         "description": "Defining a shoulder line is surprisingly important. Layering on a wide scarf over her shoulders may suggest a poncho if the camera frame is too wide ."
       },
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false,
         "description": "Replicating the technique, but with a beautiful unstructured lightweight fabric, may suggest the classy grandmother of a linebacker."
       },
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false,
         "description": "And then there is surplus fabric clumped up by the wheelchair grip hinting at a 80s soap tv icon with pouffy sleeves."
       }
     ],
-    "layout": "three-column-cards",
+    "layout": "column-cards",
     "isImageCarousel": false
   },
   {
@@ -873,17 +863,17 @@
     "content": [],
     "images": [
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false,
         "description": ""
       },
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false,
         "description": ""
       }
     ],
-    "layout": "two-column-cards",
+    "layout": "column-cards",
     "isImageCarousel": false
   },
   {
@@ -993,12 +983,12 @@
     ],
     "images": [
       {
-        "url": "",
+        "url": "https://placehold.co/400x600",
         "isVideo": false,
         "description": ""
       }
     ],
-    "layout": "single-card",
+    "layout": "column-cards",
     "isImageCarousel": false
   }
 ]

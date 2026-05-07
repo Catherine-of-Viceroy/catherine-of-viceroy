@@ -3,6 +3,7 @@ import SplitLayout from "@/components/layout/SplitLayout";
 import contentData from "@/data/stories.json";
 import Pagination from "@/components/ui/Pagination";
 import ImageCarousel from "@/components/ui/ImageCarousel";
+import Card from "@/components/ui/Card";
 interface StoryPageProps {
   params: Promise<{ id: string }>;
 }
@@ -113,6 +114,13 @@ export default async function StoryPage({ params }: StoryPageProps) {
           imagePosition="right"
         />
       )}
+      {story.layout == "column-cards" && (
+        <div className="flex flex-row flex-wrap gap-8 justify-center">
+          {story.images.map((image, index) => (
+            <Card key={index} image={image} />
+          ))}
+        </div>
+      )}
       </div>
     )
   )};
@@ -121,7 +129,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
     <div className="flex flex-col flex-1 items-center bg-zinc-50 font-sans dark:bg-black px-4 md:px-[60px] w-full max-w-[1440px] mx-auto">
       <Header />
       {renderContent()}
-      <Pagination currentPage={parseInt(id)} totalPages={10} />
+      <Pagination currentPage={parseInt(id)} totalPages={11} />
     </div>
   );
 }
