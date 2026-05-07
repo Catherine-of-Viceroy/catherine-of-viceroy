@@ -192,38 +192,47 @@
     "images": [
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_3443.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_3764.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },{
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_3941.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_4826.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_4919.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_4981.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_5016.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_5165.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_5980.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -244,31 +253,38 @@
     "images": [
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0356.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0374.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0507.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0560.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0572.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0641.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0678.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -286,27 +302,33 @@
     "images": [
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_3443.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_3764.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_3941.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_4826.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_4919.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_4981.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -344,35 +366,43 @@
     "images": [
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_0450.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_0560.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_1934.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_2145.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_2230.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_4540.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_5191.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_5200.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -390,31 +420,38 @@
     "images": [
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_0475.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_0685.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_0925.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_0954.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_5472.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_5485.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_5557.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -454,55 +491,68 @@
     "images": [
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_1555.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_1934.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2139.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2581.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2592.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2693.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2802.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3099.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3234.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3269.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3275.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3308.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3562.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -520,23 +570,28 @@
     "images": [
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_1704.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_1934.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_2230.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_5191.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_5200.jpg",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -574,7 +629,8 @@
     "images": [
       {
         "url": "https://placehold.co/400x600",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -592,7 +648,8 @@
     "images": [
       {
         "url": "https://placehold.co/400x600",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -610,7 +667,8 @@
     "images": [
       {
         "url": "https://placehold.co/400x600",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -628,7 +686,8 @@
     "images": [
       {
         "url": "https://placehold.co/400x600",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -646,7 +705,8 @@
     "images": [
       {
         "url": "https://placehold.co/400x600",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -665,7 +725,8 @@
     "images": [
       {
         "url": "https://placehold.co/400x600",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -684,7 +745,8 @@
     "images": [
       {
         "url": "https://placehold.co/400x600",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -703,7 +765,8 @@
     "images": [
       {
         "url": "https://placehold.co/400x600",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
@@ -722,7 +785,8 @@
     "images": [
       {
         "url": "https://placehold.co/400x600",
-        "isVideo": false
+        "isVideo": false,
+        "borderRadius": "1rem"
       }
     ],
     "layout": "half",
