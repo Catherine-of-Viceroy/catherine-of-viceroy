@@ -94,10 +94,12 @@
     "title": "",
     "subtitle": "",
     "content": [
-      "The 'colours' collection is a natural progression in sophistication with the introduction of wool scarves, and a rainbow of contemporary colours by way of brand new pairs of tees, $5 each, and still 'fresh' from the factory. In time, when every possible colour combination had been exhausted, the next infusion of colour was furnished by the long sleeves of my best shirts. Silk ties next played a supportive role with a hint of colour around the neck, however, they would eventually be layered to imply a silk blouse or high neck camisole until ultimately erupting as faux couture.",
-      "A red canvas tote bag from mom's preferred bakery was put into service. Basic kit consisted of a comb, a brush, a gel and a pink two speed travel hairdryer.",
-      "Staging gets personal with the occasional inclusion of a family photo. Interestingly, the floral, on occasion, has a darker hue. I like it. Suppose it could have been a cloudy day. Or perhaps the sheers were closed. Anyway, I like it. Turns out I could exaggerate the effect by pivoting the floral on its axes. Photographing was evolving.",
-      "A fun side note regarding those tees, I bought all mediums thinking I'd put them in my own closet the following season. Turns out, I tried keto, lost 60 pounds, and now run the risk of generating substantial flutter in a crosswind. Thank you, keto. And thank you to my brilliant GP for the referral."
+      "The 'colours' collection is a natural progression in sophistication with the introduction of wool scarves, and a rainbow of contemporary colours by way of brand new pairs of tees, $5 each, and still ‘fresh’ from the factory. In time, when every possible colour combination had been exhausted, the next infusion of colour was furnished by the long sleeves of my best shirts. Silk ties next played a supportive role with a hint of colour around the neck, however, they would eventually be layered to imply a silk blouse or high neck camisole until ultimately erupting as faux couture.",
+      "Styling will be simplified by utilizing a single solitary item and spread (err, oh my apologies, I mean drape) it artfully across the landscape. And then by adding a silk scarf at the neck, a wool scarf could subsequently be elevated to the status of a shawl. Hmmm. Could be on to something here.",
+      "Staging gets personal with the occasional inclusion of a family photo. Interestingly, the floral, on occasion, has a darker hue. I like it.",
+      "Suppose it could have been a cloudy day. Or perhaps the sheers were closed. Anyway, I like it. Turns out I could exaggerate the effect by pivoting the floral on its axes.",
+      "Photographing was evolving.",
+      "A fun side note regarding those tees, I bought all mediums thinking I’d put them in my own closet the following season. Turns out, I tried keto, lost 60 pounds, and now run the risk of generating substantial flutter in a crosswind. Thank you, keto. And thank you to my brilliant GP for the referral."
     ],
     "images": [
       {
@@ -560,7 +562,19 @@
     "isImageCarousel": true
   },
   {
-    "id": 14,
+    "id":"14",
+    "pageId": 6,
+    "title": "",
+    "subtitle": "",
+    "content": [
+      "The 'halo' collection incorporates premium corporate-grade fabrics, advances a palate of pressed face powders and their application techniques, ironing of all the component pieces, extensive use of the 'structured lapel', accessorized accordingly, and a more expressive coif."
+    ],
+    "images": [
+    ],
+    "layout": "full"
+  },
+  {
+    "id": 15,
     "pageId": 6,
     "title": "",
     "subtitle": "",
@@ -599,7 +613,7 @@
     "isImageCarousel": true
   },
   {
-    "id": 15,
+    "id": 16,
     "pageId": 6,
     "title": "",
     "subtitle": "",
@@ -618,7 +632,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 16,
+    "id": 17,
     "pageId": 7,
     "title": "",
     "subtitle": "",
@@ -638,7 +652,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 17,
+    "id": 18,
     "pageId": 7,
     "title": "",
     "subtitle": "",
@@ -657,7 +671,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 18,
+    "id": 19,
     "pageId": 7,
     "title": "",
     "subtitle": "",
@@ -676,7 +690,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 19,
+    "id": 20,
     "pageId": 8,
     "title": "",
     "subtitle": "",
@@ -695,7 +709,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 20,
+    "id": 21,
     "pageId": 8,
     "title": "",
     "subtitle": "",
@@ -714,7 +728,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 21,
+    "id": 22,
     "pageId": 8,
     "title": "",
     "subtitle": "",
@@ -734,7 +748,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 22,
+    "id": 23,
     "pageId": 9,
     "title": "",
     "subtitle": "",
@@ -754,7 +768,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 23,
+    "id": 24,
     "pageId": 9,
     "title": "",
     "subtitle": "",
@@ -774,7 +788,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 24,
+    "id": 25,
     "pageId": 9,
     "title": "",
     "subtitle": "",
@@ -794,7 +808,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 25,
+    "id": 26,
     "pageId":10,
     "title": "SPA, HAIR , MAKEUP FOR  THE STATIC CENTENARIAN WOMAN...",
     "subtitle": "",
@@ -816,7 +830,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 26,
+    "id": 27,
     "pageId": 10,
     "title": "STYLING TECHNIQUES FOR THE ACTIVE-APPEARING CENTENARIAN WOMAN...",
     "subtitle": "",
@@ -830,7 +844,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 27,
+    "id": 28,
     "pageId": 10,
     "title": "",
     "subtitle": "",
@@ -851,7 +865,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 28,
+    "id": 29,
     "pageId": 10,
     "title": "",
     "subtitle": "",
@@ -865,7 +879,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 29,
+    "id": 30,
     "pageId": 10,
     "title": "",
     "subtitle": "",
@@ -891,7 +905,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 30,
+    "id": 31,
     "pageId": 10,
     "title": "",
     "subtitle": "",
@@ -903,7 +917,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 31,
+    "id": 32,
     "pageId": 11,
     "title": "STAGING TECHNIQUES TO PHOTOGRAPH A FRAIL CENTENARIAN WOMAN...",
     "subtitle": "",
@@ -920,7 +934,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 32,
+    "id": 33,
     "pageId": 11,
     "title": "",
     "subtitle": "",
@@ -941,7 +955,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 33,
+    "id": 34,
     "pageId": 11,
     "title": "",
     "subtitle": "",
@@ -956,7 +970,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 34,
+    "id": 35,
     "pageId": 11,
     "title": "PHOTOGRAPHING A WHEELCHAIR-BOUND CENTENARIAN WOMAN...",
     "subtitle": "",
@@ -972,7 +986,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 35,
+    "id": 36,
     "pageId": 11,
     "title": "CONVERSING WITH A CENTENARIAN WOMAN WITH MEMORY ISSUES...",
     "subtitle": "",
@@ -990,7 +1004,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 36,
+    "id": 37,
     "pageId": 11,
     "title": "AND THE ALL IMPORTANT SHOUT OUTS...",
     "subtitle": "",
@@ -1007,7 +1021,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 37,
+    "id": 38,
     "pageId": 11,
     "title": "AND WHAT ABOUT ME...",
     "subtitle": "",
@@ -1023,7 +1037,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 38,
+    "id": 39,
     "pageId": 11,
     "title": "AND FINALLY, SOME RANDOM THOUGHTS...",
     "subtitle": "",
@@ -1038,7 +1052,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 39,
+    "id": 40,
     "pageId": 11,
     "title": "",
     "subtitle": "",

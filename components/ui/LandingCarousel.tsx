@@ -103,6 +103,19 @@ export default function LandingCarousel({
   }, [currentIndex, carouselItems.length, isTransitioning, realItemCount]);
 
 
+  // Play video on active slide, pause all others
+  useEffect(() => {
+    videoRefs.current.forEach((video, index) => {
+      if (!video) return;
+      if (index === currentIndex) {
+        video.currentTime = 0;
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    });
+  }, [currentIndex]);
+
   // Manual navigation
   const goToPrevious = () => {
     if (isAnimating) return;
@@ -144,7 +157,7 @@ export default function LandingCarousel({
                   className="w-full h-full object-cover"
                   playsInline
                   muted
-                  autoPlay={index === currentIndex}
+                  autoPlay={false}
                   loop={false}
                   onLoadedData={() => {
                     if (index === currentIndex) setIsLoading(false);
@@ -201,7 +214,7 @@ export default function LandingCarousel({
     </div>
     {/* Navigation Buttons */}
       {realItemCount > 1 && (
-        <div className="flex flex-row justify-end w-full items-end gap-2 mt-2">
+        <div className="flex flex-row justify-center w-full items-end gap-2 pt-8">
           <button
             onClick={goToPrevious}
             className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"

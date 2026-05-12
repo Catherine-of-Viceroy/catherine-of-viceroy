@@ -183,7 +183,7 @@ export default function ImageCarousel({
               />
             ))}
           </div>
-          <div className="flex flex-row justify-end w-full items-end gap-2 mt-2">
+          <div className="flex flex-row justify-center w-full items-end gap-2 mt-2">
             <button
               onClick={goToPrevious}
               className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"
