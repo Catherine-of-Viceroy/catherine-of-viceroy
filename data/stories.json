@@ -938,7 +938,7 @@
     ],
     "layout": "half",
     "imagePosition": "left",
-    "isImageCarousel": false
+    "isImageCarousel": true
   },
   {
     "id": 22,
@@ -971,14 +971,109 @@
     ],
     "images": [
       {
-        "url": "https://placehold.co/400x600",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_3927.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_4737.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_4763.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_4785.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_4826.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_4839.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_4854.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_4876.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_5084.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_5212.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_5259.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_5295.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_5417.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_5485.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_5589.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_5661.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_5699.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_5742.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_5765.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%201/IMG_5774.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
     ],
     "layout": "half",
     "imagePosition": "right",
-    "isImageCarousel": false
+    "isImageCarousel": true
   },
   {
     "id": 24,
@@ -991,14 +1086,22 @@
     ],
     "images": [
       {
-        "url": "https://placehold.co/400x600",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%202/pair%201.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%202/pair%202.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
     ],
     "layout": "half",
     "imagePosition": "left",
-    "isImageCarousel": false
+    "isImageCarousel": true,
+    "leftSize": "lg:w-2/3",
+    "rightSize":"lg:w-1/3",
+    "isTwoImageWidth": true
   },
   {
     "id": 25,
@@ -1011,14 +1114,34 @@
     ],
     "images": [
       {
-        "url": "https://placehold.co/400x600",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%203/IMG_5417.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%203/IMG_5472.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%203/IMG_5522.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%203/IMG_5557.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/carousel%203/IMG_5564.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
     ],
     "layout": "half",
     "imagePosition": "right",
-    "isImageCarousel": false
+    "isImageCarousel": true
   },
   {
     "id": 26,
@@ -1064,12 +1187,12 @@
     "content": [],
     "images": [
       {
-        "url": "https://placehold.co/400x600",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2010/static%201.jpg",
         "isVideo": false,
         "description": "Long sleeves are a bonus as they can be wrapped around the neck to appear as a matching scarf. But should there be a cuff and placket, ensure it doesn't make it into the photo frame."
       },
       {
-        "url": "https://placehold.co/400x600",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2010/static%202.jpg",
         "isVideo": false,
         "description": "And from my perch, blouses fall into two categories: the obvious and the not-so-obvious being front button units which requires laying it on her chest backwards with the shoulder seams lined up exactly where they'd otherwise be. The ever-present scarf hides the gaps and tames any wave in the fabric."
       }
@@ -1099,17 +1222,17 @@
     "content": [],
     "images": [
       {
-        "url": "https://placehold.co/400x600",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2010/static%203.jpg",
         "isVideo": false,
         "description": "Defining a shoulder line is surprisingly important. Layering on a wide scarf over her shoulders may suggest a poncho if the camera frame is too wide ."
       },
       {
-        "url": "https://placehold.co/400x600",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2010/static%204.jpg",
         "isVideo": false,
         "description": "Replicating the technique, but with a beautiful unstructured lightweight fabric, may suggest the classy grandmother of a linebacker."
       },
       {
-        "url": "https://placehold.co/400x600",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2010/static%205.jpg",
         "isVideo": false,
         "description": "And then there is surplus fabric clumped up by the wheelchair grip hinting at a 80s soap tv icon with pouffy sleeves."
       }
@@ -1154,12 +1277,12 @@
     "content": [],
     "images": [
       {
-        "url": "https://placehold.co/400x600",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011/static%201.jpg",
         "isVideo": false,
         "description": ""
       },
       {
-        "url": "https://placehold.co/400x600",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011/static%202.jpg",
         "isVideo": false,
         "description": ""
       }
@@ -1274,7 +1397,7 @@
     ],
     "images": [
       {
-        "url": "https://placehold.co/400x600",
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011/static%203.jpg",
         "isVideo": false,
         "description": ""
       }

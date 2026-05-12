@@ -65,8 +65,8 @@ export default async function StoryPage({ params }: StoryPageProps) {
               </div>
             )
           }
-          leftSize="lg:w-1/3"
-          rightSize="lg:w-2/3"
+          leftSize={story.leftSize ?? "lg:w-1/3"}
+          rightSize={story.rightSize ?? "lg:w-2/3"}
           imagePosition="left"
         />
       )}
