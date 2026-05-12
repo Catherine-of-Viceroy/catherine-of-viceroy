@@ -40,7 +40,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
           left={
             story.isImageCarousel ? (
               <div className="flex justify-start">
-                <ImageCarousel images={story.images} />
+                <ImageCarousel images={story.images} width={story.isTwoImageWidth ? 700 : 400} height={story.isTwoImageWidth ? 467 : 600} />
               </div>
             ) : (
               <div className="flex justify-start gap-4">
@@ -84,7 +84,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
           right={
             story.isImageCarousel ? (
               <div className="flex justify-end">
-                <ImageCarousel images={story.images} />
+                <ImageCarousel images={story.images} width={story.isTwoImageWidth ? 700 : 400} height={story.isTwoImageWidth ? 467 : 600} />
               </div>
             ) : (
               <div className="flex justify-end gap-4">
@@ -109,8 +109,8 @@ export default async function StoryPage({ params }: StoryPageProps) {
               </div>
             )
           }
-          leftSize="lg:w-2/3"
-          rightSize="lg:w-1/3"
+          leftSize={story.leftSize ?? "lg:w-2/3"}
+          rightSize={story.rightSize ?? "lg:w-1/3"}
           imagePosition="right"
         />
       )}

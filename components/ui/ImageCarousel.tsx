@@ -8,6 +8,7 @@ interface ImageItem {
   url: string;
   alt?: string;
   isVideo?: boolean;
+  width?: number | string;
 }
 
 interface ImageCarouselProps {
@@ -21,6 +22,9 @@ export default function ImageCarousel({
   width = 400,
   height = 600,
 }: ImageCarouselProps) {
+  // Resolve per-image widths, falling back to the carousel default
+  const resolveWidth = (img: ImageItem) =>
+    img.width ? Number(img.width) : width;
   const [isLoading, setIsLoading] = useState(true);
   const [isTransitioning, setIsTransitioning] = useState(true);
 
@@ -118,13 +122,18 @@ export default function ImageCarousel({
     setIsLoading(true);
   };
 
+  // Use the widest image's aspect ratio for the container
+  const maxWidth = Math.max(...carouselItems.map((img) => resolveWidth(img)));
+  const aspectRatio = `${maxWidth}/${height}`;
+
   // Calculate transform offset
   const translateX = -currentIndex * 100;
 
   return (
-    <div className="relative" style={{ width, height }}>
+    <div className="flex flex-col w-full" style={{ maxWidth }}>
+    <div className="relative w-full" style={{ aspectRatio, maxHeight: 533 }}>
       {/* Sliding Track */}
-      <div className="relative w-full h-full overflow-hidden rounded-lg bg-zinc-900">
+      <div className="relative w-full h-full overflow-hidden rounded-lg bg-zinc-900" style={{ borderRadius: "1rem" }}>
         <div
           className="flex h-full"
           style={{
@@ -135,7 +144,7 @@ export default function ImageCarousel({
           {carouselItems.map((image, index) => (
             <div
               key={index}
-              className="relative flex-shrink-0 w-full h-full"
+              className="relative flex-shrink-0 w-full h-full flex justify-center"
             >
               {image.isVideo ? (
                 <video
@@ -144,7 +153,7 @@ export default function ImageCarousel({
                   className="w-full h-full object-cover"
                 />
               ) : (
-                <>
+                <div className="relative w-full h-full">
                   {isLoading && index === currentIndex && (
                     <div className="absolute inset-0 bg-zinc-800 animate-pulse" />
                   )}
@@ -156,11 +165,11 @@ export default function ImageCarousel({
                     onLoad={() => {
                       if (index === currentIndex) setIsLoading(false);
                     }}
-                    sizes={`${width}px`}
+                    sizes={`${maxWidth}px`}
                     unoptimized
                     priority={index === 1}
                   />
-                </>
+                </div>
               )}
             </div>
           ))}
@@ -183,25 +192,27 @@ export default function ImageCarousel({
               />
             ))}
           </div>
-          <div className="flex flex-row justify-center w-full items-end gap-2 mt-2">
-            <button
-              onClick={goToPrevious}
-              className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"
-              aria-label="Previous image"
-            >
-              <ChevronLeft size={24} />
-            </button>
-
-            <button
-              onClick={goToNext}
-              className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"
-              aria-label="Next image"
-            >
-              <ChevronRight size={24} />
-            </button>
-          </div>
         </>
       )}
+    </div>
+    {validImages.length > 1 && (
+      <div className="flex flex-row justify-center w-full items-center gap-2 mt-2">
+        <button
+          onClick={goToPrevious}
+          className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"
+          aria-label="Previous image"
+        >
+          <ChevronLeft size={24} />
+        </button>
+        <button
+          onClick={goToNext}
+          className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"
+          aria-label="Next image"
+        >
+          <ChevronRight size={24} />
+        </button>
+      </div>
+    )}
     </div>
   );
 }
