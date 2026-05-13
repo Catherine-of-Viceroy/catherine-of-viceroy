@@ -11,7 +11,7 @@ export default function Header() {
         priority
       />
 
-      <h3 className="text-sm tracking-widest uppercase text-white">
+      <h3>
         Styling the Modern Centenarian Woman
       </h3>
 
