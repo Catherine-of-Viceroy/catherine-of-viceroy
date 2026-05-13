@@ -12,7 +12,7 @@ export default function Header() {
       />
 
       <h3 className="text-sm tracking-widest uppercase text-white">
-        Styling for the modern centenarian woman
+        Styling the Modern Centenarian Woman
       </h3>
 
       <Image
