@@ -1,37 +1,5 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: 'Georgia';
-  src: url('https://fonts.cdnfonts.com/s/15432/Georgia.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Georgia';
-  src: url('https://fonts.cdnfonts.com/s/15432/Georgia Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuREbVmUiA8.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --background: #000000;
   --foreground: #ffffff;
@@ -56,11 +24,11 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-georgia);
+  font-family: Georgia, serif;
 }
 h2 {
   color: #FFF;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -77,6 +45,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 button {
   cursor: pointer;
+}
+p {
+  font-family: Roboto;
 }
 
 /* Carousel alignment classes */
