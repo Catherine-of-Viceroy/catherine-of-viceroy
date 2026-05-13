@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Play } from "lucide-react";
 
 interface CarouselItem {
   url: string;
@@ -21,6 +21,7 @@ export default function LandingCarousel({
 }: LandingCarouselProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [isTransitioning, setIsTransitioning] = useState(true);
+  const [isPaused, setIsPaused] = useState(false);
   const trackRef = useRef<HTMLDivElement>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
@@ -116,17 +117,42 @@ export default function LandingCarousel({
     });
   }, [currentIndex]);
 
-  // Manual navigation
-  const goToPrevious = () => {
-    if (isAnimating) return;
-    setTargetIndex((prev) => prev - 1);
-    setIsLoading(true);
-  };
+  // Autoplay: advance every `interval` ms unless paused or animating or current slide is video
+  useEffect(() => {
+    if (isPaused || isCurrentVideo) {
+      if (timerRef.current) clearInterval(timerRef.current);
+      return;
+    }
+    timerRef.current = setInterval(() => {
+      if (!isAnimating) {
+        setTargetIndex((prev) => prev + 1);
+        setIsLoading(true);
+      }
+    }, interval);
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [isPaused, isAnimating, isCurrentVideo, interval]);
 
-  const goToNext = () => {
-    if (isAnimating) return;
+  // When a video slide ends, advance to next slide
+  const handleVideoEnded = useCallback(() => {
     setTargetIndex((prev) => prev + 1);
     setIsLoading(true);
+  }, []);
+
+  const handleTap = () => {
+    setIsPaused((prev) => {
+      const next = !prev;
+      const activeVideo = videoRefs.current[currentIndex];
+      if (activeVideo) {
+        if (next) {
+          activeVideo.pause();
+        } else {
+          activeVideo.play().catch(() => {});
+        }
+      }
+      return next;
+    });
   };
 
   // Calculate transform offset
@@ -134,7 +160,11 @@ export default function LandingCarousel({
 
   return (
     <div className="flex flex-col w-full">
-    <div className="relative w-full max-w-[870px] mx-auto" style={{ aspectRatio: "870/600" }}>
+    <div
+      className="relative w-full max-w-[870px] mx-auto cursor-pointer"
+      style={{ aspectRatio: "870/600" }}
+      onClick={handleTap}
+    >
       {/* Sliding Track */}
       <div className="relative w-full h-full overflow-hidden bg-zinc-900">
         <div
@@ -162,6 +192,7 @@ export default function LandingCarousel({
                   onLoadedData={() => {
                     if (index === currentIndex) setIsLoading(false);
                   }}
+                  onEnded={handleVideoEnded}
                 />
               ) : (
                 <>
@@ -193,9 +224,9 @@ export default function LandingCarousel({
           {validItems.map((_, index) => (
             <button
               key={index}
-              onClick={() => {
+              onClick={(e) => {
+                e.stopPropagation();
                 if (!isAnimating) {
-                  // Calculate target in carousel (add 1 for the clone at start)
                   const carouselTarget = index + 1;
                   setTargetIndex(carouselTarget);
                   setIsLoading(true);
@@ -211,27 +242,15 @@ export default function LandingCarousel({
           ))}
         </div>
       )}
-    </div>
-    {/* Navigation Buttons */}
-      {realItemCount > 1 && (
-        <div className="flex flex-row justify-center w-full items-end gap-2 pt-8">
-          <button
-            onClick={goToPrevious}
-            className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"
-            aria-label="Previous image"
-          >
-            <ChevronLeft size={24} />
-          </button>
-
-          <button
-            onClick={goToNext}
-            className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"
-            aria-label="Next image"
-          >
-            <ChevronRight size={24} />
-          </button>
+      {/* Play icon overlay when paused */}
+      {isPaused && (
+        <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+          <div className="p-4 rounded-full bg-black/40">
+            <Play size={48} className="text-white" fill="white" />
+          </div>
         </div>
       )}
+    </div>
     </div>
   );
 }
