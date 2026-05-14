@@ -5,7 +5,7 @@ export default function Header() {
     <header className="flex flex-col items-center gap-4 py-10">
       <Image
         src="/images/logo.svg"
-        alt="Catherine of Victory logo"
+        alt="Catherine of Viceroy logo"
         width={509}
         height={160}
         priority

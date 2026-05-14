@@ -3,8 +3,8 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Catherine of Victory",
-  description: "Catherine of Victory",
+  title: "Catherine of Viceroy",
+  description: "Catherine of Viceroy",
 };
 
 export default function RootLayout({
