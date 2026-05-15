@@ -22,19 +22,17 @@ export default function LandingCarousel({
   interval = 5000,
 }: LandingCarouselProps) {
   const [isLoading, setIsLoading] = useState(true);
-  const [isTransitioning, setIsTransitioning] = useState(true);
   const [isPaused, setIsPaused] = useState(false);
-  const trackRef = useRef<HTMLDivElement>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
   // Filter out items with empty URLs
   const filteredItems = items.filter((item) => item.url && item.url.trim() !== "");
-  
+
   // Shuffle only on client after hydration to avoid SSR mismatch
   const [validItems, setValidItems] = useState(filteredItems);
   const [isShuffled, setIsShuffled] = useState(false);
-  
+
   useEffect(() => {
     if (!isShuffled) {
       setValidItems(shuffleRandomizableItems(filteredItems));
@@ -42,80 +40,14 @@ export default function LandingCarousel({
     }
   }, [isShuffled, filteredItems]);
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   if (validItems.length === 0) {
     return null;
   }
 
-  // Create infinite carousel items: [last, ...items, first]
-  const carouselItems = [
-    validItems[validItems.length - 1], // Clone of last at beginning
-    ...validItems,
-    validItems[0], // Clone of first at end
-  ];
-
-  // Start at index 1 (first real item)
-  const [currentIndex, setCurrentIndex] = useState(1);
-  const [targetIndex, setTargetIndex] = useState(1);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const currentItem = carouselItems[currentIndex];
+  const currentItem = validItems[currentIndex];
   const isCurrentVideo = currentItem?.isVideo;
-  const realItemCount = validItems.length;
-  const realIndex = ((currentIndex - 1 + realItemCount) % realItemCount);
-
-
-  // Move one step toward target
-  const stepTowardTarget = useCallback(() => {
-    setCurrentIndex((prev) => {
-      if (prev === targetIndex) {
-        setIsAnimating(false);
-        return prev;
-      }
-      if (targetIndex < prev) {
-        return prev - 1;
-      }
-      return prev + 1;
-    });
-  }, [targetIndex]);
-
-  // Handle target index changes - animate step by step
-  useEffect(() => {
-    if (currentIndex === targetIndex) {
-      setIsAnimating(false);
-      return;
-    }
-
-    setIsAnimating(true);
-    setIsTransitioning(true);
-    const stepTimer = setTimeout(() => {
-      stepTowardTarget();
-    }, 400);
-
-    return () => clearTimeout(stepTimer);
-  }, [targetIndex, currentIndex, stepTowardTarget]);
-
-  // Handle infinite wrap-around after transition
-  useEffect(() => {
-    if (!isTransitioning) return;
-
-    const timer = setTimeout(() => {
-      // If we're at the clone of first (end), jump to real first
-      if (currentIndex === carouselItems.length - 1) {
-        setIsTransitioning(false);
-        setCurrentIndex(1);
-        setTargetIndex(1);
-      }
-      // If we're at the clone of last (beginning), jump to real last
-      else if (currentIndex === 0) {
-        setIsTransitioning(false);
-        setCurrentIndex(realItemCount);
-        setTargetIndex(realItemCount);
-      }
-    }, 500); // Wait for CSS transition to finish
-
-    return () => clearTimeout(timer);
-  }, [currentIndex, carouselItems.length, isTransitioning, realItemCount]);
-
 
   // Play video on active slide, pause all others
   useEffect(() => {
@@ -130,28 +62,27 @@ export default function LandingCarousel({
     });
   }, [currentIndex]);
 
-  // Autoplay: advance every `interval` ms unless paused or animating or current slide is video
+  const advance = useCallback(() => {
+    setCurrentIndex((prev) => (prev + 1) % validItems.length);
+    setIsLoading(true);
+  }, [validItems.length]);
+
+  // Autoplay: advance every `interval` ms unless paused or current slide is video
   useEffect(() => {
     if (isPaused || isCurrentVideo) {
       if (timerRef.current) clearInterval(timerRef.current);
       return;
     }
-    timerRef.current = setInterval(() => {
-      if (!isAnimating) {
-        setTargetIndex((prev) => prev + 1);
-        setIsLoading(true);
-      }
-    }, interval);
+    timerRef.current = setInterval(advance, interval);
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [isPaused, isAnimating, isCurrentVideo, interval]);
+  }, [isPaused, isCurrentVideo, interval, advance]);
 
   // When a video slide ends, advance to next slide
   const handleVideoEnded = useCallback(() => {
-    setTargetIndex((prev) => prev + 1);
-    setIsLoading(true);
-  }, []);
+    advance();
+  }, [advance]);
 
   const handleTap = () => {
     setIsPaused((prev) => {
@@ -168,30 +99,20 @@ export default function LandingCarousel({
     });
   };
 
-  // Calculate transform offset
-  const translateX = -currentIndex * 100;
-
   return (
     <div className="flex flex-col w-full">
-    <div
-      className="relative w-full max-w-[870px] mx-auto cursor-pointer"
-      style={{ aspectRatio: "870/600" }}
-      onClick={handleTap}
-    >
-      {/* Sliding Track */}
-      <div className="relative w-full h-full overflow-hidden bg-zinc-900">
-        <div
-          ref={trackRef}
-          className="flex h-full"
-          style={{
-            transform: `translateX(${translateX}%)`,
-            transition: isTransitioning ? "transform 500ms ease-out" : "none",
-          }}
-        >
-          {carouselItems.map((item, index) => (
+      <div
+        className="relative mx-auto cursor-pointer"
+        style={{ width: "870px", maxWidth: "100%", height: "600px", maxHeight: "calc(100vw * 0.6897)" }}
+        onClick={handleTap}
+      >
+        {/* Fade Stack */}
+        <div className="absolute inset-0 overflow-hidden bg-zinc-900">
+          {validItems.map((item, index) => (
             <div
               key={index}
-              className="relative flex-shrink-0 w-full h-full"
+              className="absolute inset-0 transition-opacity duration-[2400ms] ease-in-out"
+              style={{ opacity: index === currentIndex ? 1 : 0 }}
             >
               {item.isVideo ? (
                 <video
@@ -220,50 +141,46 @@ export default function LandingCarousel({
                     onLoad={() => {
                       if (index === currentIndex) setIsLoading(false);
                     }}
-                    sizes="870px"
+                    sizes="(max-width: 870px) 100vw, 870px"
                     unoptimized
-                    priority={index === 1}
+                    priority={index === 0}
                   />
                 </>
               )}
             </div>
           ))}
         </div>
-      </div>
 
-      {/* Progress Dots - use real index
-      {realItemCount > 1 && (
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-10">
-          {validItems.map((_, index) => (
-            <button
-              key={index}
-              onClick={(e) => {
-                e.stopPropagation();
-                if (!isAnimating) {
-                  const carouselTarget = index + 1;
-                  setTargetIndex(carouselTarget);
+        {/* Progress Dots - use real index
+        {validItems.length > 1 && (
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+            {validItems.map((_, index) => (
+              <button
+                key={index}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setCurrentIndex(index);
                   setIsLoading(true);
-                }
-              }}
-              className={`w-3 h-3 rounded-full transition-colors ${
-                index === realIndex
-                  ? "bg-white"
-                  : "bg-white/50 hover:bg-white/70"
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))} 
-        </div>
-      )} */}
-      {/* Play icon overlay when paused */}
-      {isPaused && (
-        <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-          <div className="p-4 rounded-full bg-black/40">
-            <Play size={48} className="text-white" fill="white" />
+                }}
+                className={`w-3 h-3 rounded-full transition-colors ${
+                  index === currentIndex
+                    ? "bg-white"
+                    : "bg-white/50 hover:bg-white/70"
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
           </div>
-        </div>
-      )}
-    </div>
+        )} */}
+        {/* Play icon overlay when paused */}
+        {isPaused && (
+          <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+            <div className="p-4 rounded-full bg-black/40">
+              <Play size={48} className="text-white" fill="white" />
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
