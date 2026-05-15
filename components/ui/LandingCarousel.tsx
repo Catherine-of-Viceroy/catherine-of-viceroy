@@ -3,11 +3,13 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import { Play } from "lucide-react";
+import { shuffleRandomizableItems } from "@/lib/utils";
 
 interface CarouselItem {
   url: string;
   alt?: string;
   isVideo?: boolean;
+  randomizeOrder?: boolean;
 }
 
 interface LandingCarouselProps {
@@ -27,7 +29,18 @@ export default function LandingCarousel({
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
   // Filter out items with empty URLs
-  const validItems = items.filter((item) => item.url && item.url.trim() !== "");
+  const filteredItems = items.filter((item) => item.url && item.url.trim() !== "");
+  
+  // Shuffle only on client after hydration to avoid SSR mismatch
+  const [validItems, setValidItems] = useState(filteredItems);
+  const [isShuffled, setIsShuffled] = useState(false);
+  
+  useEffect(() => {
+    if (!isShuffled) {
+      setValidItems(shuffleRandomizableItems(filteredItems));
+      setIsShuffled(true);
+    }
+  }, [isShuffled, filteredItems]);
 
   if (validItems.length === 0) {
     return null;
