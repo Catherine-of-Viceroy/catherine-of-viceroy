@@ -231,7 +231,7 @@ export default function LandingCarousel({
         </div>
       </div>
 
-      {/* Progress Dots - use real index */}
+      {/* Progress Dots - use real index
       {realItemCount > 1 && (
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-10">
           {validItems.map((_, index) => (
@@ -252,9 +252,9 @@ export default function LandingCarousel({
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
-          ))}
+          ))} 
         </div>
-      )}
+      )} */}
       {/* Play icon overlay when paused */}
       {isPaused && (
         <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
