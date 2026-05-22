@@ -8,6 +8,14 @@ interface StoryPageProps {
   params: Promise<{ id: string }>;
 }
 
+export async function generateStaticParams() {
+  // Get unique pageIds from stories data
+  const uniquePageIds = [...new Set(contentData.map((story) => story.pageId))];
+  return uniquePageIds.map((pageId) => ({
+    id: pageId.toString(),
+  }));
+}
+
 export default async function StoryPage({ params }: StoryPageProps) {
   const { id } = await params;
   const story = contentData.filter((story) => story.pageId === parseInt(id));
@@ -40,7 +48,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
           left={
             story.isImageCarousel ? (
               <div className="flex justify-start">
-                <ImageCarousel images={story.images} width={story.isTwoImageWidth ? 700 : 400} height={story.isTwoImageWidth ? 467 : 600} />
+                <ImageCarousel images={story.images} width={story.isTwoImageWidth ? 700 : 400} height={story.isTwoImageWidth ? 467 : 600} lastItemHandle={story?.lastItemHandle} />
               </div>
             ) : (
               <div className="flex justify-start gap-4">
@@ -84,7 +92,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
           right={
             story.isImageCarousel ? (
               <div className="flex justify-end">
-                <ImageCarousel images={story.images} width={story.isTwoImageWidth ? 700 : 400} height={story.isTwoImageWidth ? 467 : 600} />
+                <ImageCarousel images={story.images} autoSlide={story?.autoSlide ?? false} width={story.isTwoImageWidth ? 700 : 400} height={story.isTwoImageWidth ? 467 : 600} lastItemHandle={story?.lastItemHandle} />
               </div>
             ) : (
               <div className="flex justify-end gap-4">
@@ -113,6 +121,34 @@ export default async function StoryPage({ params }: StoryPageProps) {
           rightSize={story.rightSize ?? "lg:w-1/3"}
           imagePosition="right"
         />
+      )}
+      {story.layout == 'full' && story.imagePosition == 'center' && (
+        story.isImageCarousel ? (
+            <div className="flex justify-center">
+              <ImageCarousel images={story.images} autoSlide={story?.autoSlide ?? false} width={story.isTwoImageWidth ? 700 : 400} height={story.isTwoImageWidth ? 467 : 600} lastItemHandle={story?.lastItemHandle} />
+            </div>
+          ) : (
+            <div className="flex justify-center gap-4">
+              {story.images
+                .filter((image) => image.url)
+                .map((image, index) => {
+                  const img = image as { url: string; borderRadius?: string; width?: string | number; height?: string | number };
+                  const width = img.width ?? 400;
+                  const height = img.height ?? 600;
+                  return (
+                    <img
+                      key={index}
+                      src={image.url}
+                      alt={story.title}
+                      width={width}
+                      height={height}
+                      className="object-cover"
+                      style={{ borderRadius: img.borderRadius ?? "0" }}
+                    />
+                  );
+                })}
+            </div>
+          )
       )}
       {story.layout == "column-cards" && (
         <div className="flex flex-row flex-wrap gap-8 justify-center">
