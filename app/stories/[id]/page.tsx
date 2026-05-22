@@ -8,6 +8,14 @@ interface StoryPageProps {
   params: Promise<{ id: string }>;
 }
 
+export async function generateStaticParams() {
+  // Get unique pageIds from stories data
+  const uniquePageIds = [...new Set(contentData.map((story) => story.pageId))];
+  return uniquePageIds.map((pageId) => ({
+    id: pageId.toString(),
+  }));
+}
+
 export default async function StoryPage({ params }: StoryPageProps) {
   const { id } = await params;
   const story = contentData.filter((story) => story.pageId === parseInt(id));
