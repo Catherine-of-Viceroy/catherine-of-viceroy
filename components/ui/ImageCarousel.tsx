@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -11,22 +11,44 @@ interface ImageItem {
   width?: number | string;
 }
 
+interface LastItemHandle {
+  autoReturn?: boolean;
+  animation?: string;
+  duration?: number;
+  fadeDuration?: number;
+}
+
 interface ImageCarouselProps {
   images: ImageItem[];
   width?: number;
   height?: number;
+  autoSlide?: boolean;
+  interval?: number;
+  lastItemHandle?: LastItemHandle;
 }
 
 export default function ImageCarousel({
   images,
   width = 400,
   height = 600,
+  autoSlide = false,
+  interval = 5000,
+  lastItemHandle,
 }: ImageCarouselProps) {
   // Resolve per-image widths, falling back to the carousel default
   const resolveWidth = (img: ImageItem) =>
     img.width ? Number(img.width) : width;
   const [isLoading, setIsLoading] = useState(true);
   const [isTransitioning, setIsTransitioning] = useState(true);
+  const autoSlideRef = useRef<NodeJS.Timeout | null>(null);
+  const returnTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const fadeTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const hasTriggeredReturn = useRef(false);
+  const initialOpacity = useRef(1);
+  const [isFadingOut, setIsFadingOut] = useState(false);
+  const [isFadingIn, setIsFadingIn] = useState(false);
+  const [isPausedForReturn, setIsPausedForReturn] = useState(false);
+  const [currentFadeDuration, setCurrentFadeDuration] = useState(500);
 
   // Filter out images with empty URLs
   const validImages = images.filter((img) => img.url && img.url.trim() !== "");
@@ -102,6 +124,118 @@ export default function ImageCarousel({
     return () => clearTimeout(timer);
   }, [currentIndex, carouselItems.length, isTransitioning, realImageCount]);
 
+  // Handle last item auto-return with fade animation
+  useEffect(() => {
+    const shouldAutoReturn = lastItemHandle?.autoReturn;
+    const animation = lastItemHandle?.animation;
+    const duration = lastItemHandle?.duration ?? 4000;
+    const fadeDuration = lastItemHandle?.fadeDuration ?? 500;
+
+    // Reset trigger flag when we leave the last image
+    if (currentIndex !== realImageCount) {
+      hasTriggeredReturn.current = false;
+      return;
+    }
+
+
+    // Trigger when we're at the last real image (currentIndex === realImageCount means last real item)
+    // and animation is complete, and we haven't already triggered
+    if (
+      shouldAutoReturn &&
+      currentIndex === realImageCount &&
+      !isAnimating &&
+      !hasTriggeredReturn.current &&
+      validImages.length > 1
+    ) {
+      hasTriggeredReturn.current = true;
+      setIsPausedForReturn(true);
+      setCurrentFadeDuration(fadeDuration);
+
+      if (animation === "fade" || animation === "fade-out") {
+        // Wait for duration, then fade out and return
+        returnTimerRef.current = setTimeout(() => {
+          setIsFadingOut(true);
+          fadeTimerRef.current = setTimeout(() => {
+            setIsTransitioning(false);
+            setCurrentIndex(1);
+            setTargetIndex(1);
+            setIsFadingOut(false);
+            // Set initial opacity to 0 for fade-in
+            initialOpacity.current = 0;
+            // Start fade in for first image
+            setIsFadingIn(true);
+            // Small delay then fade to 1
+            setTimeout(() => {
+              setIsTransitioning(true);
+              initialOpacity.current = 1;
+              // Force a re-render by toggling state
+              setIsFadingIn((prev) => prev);
+            }, 50);
+            fadeTimerRef.current = setTimeout(() => {
+              setIsFadingIn(false);
+              setIsPausedForReturn(false);
+              hasTriggeredReturn.current = false;
+            }, fadeDuration + 50);
+          }, fadeDuration);
+        }, duration);
+      } else {
+        // No animation, just wait and return
+        returnTimerRef.current = setTimeout(() => {
+          setIsTransitioning(false);
+          setCurrentIndex(1);
+          setTargetIndex(1);
+          setIsPausedForReturn(false);
+          hasTriggeredReturn.current = false;
+        }, duration);
+      }
+    }
+
+    return () => {
+      // Only clear timers if we're leaving the last image (component unmount or index change)
+      if (currentIndex !== realImageCount) {
+        if (returnTimerRef.current) {
+          clearTimeout(returnTimerRef.current);
+          returnTimerRef.current = null;
+        }
+        if (fadeTimerRef.current) {
+          clearTimeout(fadeTimerRef.current);
+          fadeTimerRef.current = null;
+        }
+      }
+    };
+  }, [
+    currentIndex,
+    realImageCount,
+    isAnimating,
+    lastItemHandle,
+    validImages.length,
+  ]);
+
+  // Auto-slide: advance every interval ms when autoSlide is true
+  useEffect(() => {
+    if (!autoSlide || validImages.length <= 1 || isPausedForReturn) {
+      if (autoSlideRef.current) {
+        clearInterval(autoSlideRef.current);
+        autoSlideRef.current = null;
+      }
+      return;
+    }
+
+    autoSlideRef.current = setInterval(() => {
+      if (!isAnimating && !isPausedForReturn) {
+        setTargetIndex((prev) => prev + 1);
+        setIsLoading(true);
+      }
+    }, interval);
+
+    return () => {
+      if (autoSlideRef.current) {
+        clearInterval(autoSlideRef.current);
+        autoSlideRef.current = null;
+      }
+    };
+  }, [autoSlide, interval, isAnimating, isPausedForReturn, validImages.length]);
+
   const goToPrevious = () => {
     if (isAnimating) return;
     setTargetIndex((prev) => prev - 1);
@@ -138,7 +272,10 @@ export default function ImageCarousel({
           className="flex h-full"
           style={{
             transform: `translateX(${translateX}%)`,
-            transition: isTransitioning ? "transform 500ms ease-out" : "none",
+            opacity: isFadingOut ? 0 : (isFadingIn ? initialOpacity.current : 1),
+            transitionProperty: isFadingOut ? "opacity" : (isFadingIn ? "opacity" : "transform"),
+            transitionDuration: (isFadingOut || isFadingIn) ? `${currentFadeDuration}ms` : (isTransitioning ? "500ms" : "0ms"),
+            transitionTimingFunction: "ease-out",
           }}
         >
           {carouselItems.map((image, index) => (
