@@ -63,7 +63,14 @@ export default function LandingCarousel({
   }, [currentIndex]);
 
   const advance = useCallback(() => {
-    setCurrentIndex((prev) => (prev + 1) % validItems.length);
+    setCurrentIndex((prev) => {
+      const nextIndex = prev + 1;
+      if (nextIndex >= validItems.length) {
+        setIsPaused(true);
+        return prev;
+      }
+      return nextIndex;
+    });
     setIsLoading(true);
   }, [validItems.length]);
 
@@ -85,6 +92,13 @@ export default function LandingCarousel({
   }, [advance]);
 
   const handleTap = () => {
+    if (currentIndex === validItems.length - 1 && isPaused) {
+      setCurrentIndex(0);
+      setIsLoading(true);
+      setIsPaused(false);
+      return;
+    }
+    
     setIsPaused((prev) => {
       const next = !prev;
       const activeVideo = videoRefs.current[currentIndex];

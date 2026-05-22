@@ -60,6 +60,9 @@ p {
   display: flex;
   justify-content: flex-end;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 img {
   background: #000;
 }

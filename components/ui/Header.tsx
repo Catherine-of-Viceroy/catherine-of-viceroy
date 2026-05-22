@@ -11,7 +11,7 @@ export default function Header() {
         priority
       />
 
-      <h3>
+      <h3 className="uppercase">
         Styling the Modern Centenarian Woman
       </h3>
 

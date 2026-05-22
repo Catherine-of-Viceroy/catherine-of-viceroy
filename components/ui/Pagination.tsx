@@ -23,11 +23,11 @@ export default function Pagination({
   };
 
   return (
-    <nav className="flex items-center justify-between md:justify-center gap-3 py-4 w-full">
+    <nav className={`flex items-center  md:justify-center gap-3 py-4 w-full ${currentPage === 1 ? "justify-center" : "justify-between"}`}>
       <button
         onClick={() => goTo(currentPage - 1)}
         aria-label="Previous page"
-        className={`flex items-center justify-center text-white transition-colors hover:bg-white/10 md:mr-[50px] ${currentPage === 1 ? "invisible" : ""}`}
+        className={`flex items-center justify-center text-white transition-colors hover:bg-white/10 md:mr-[50px] ${currentPage === 1 ? "hidden" : ""}`}
       >
         Previous page
       </button>
@@ -40,6 +40,7 @@ export default function Pagination({
             aria-label={`Page ${page}`}
             aria-current={page === currentPage ? "page" : undefined}
             className={`flex h-5 w-5 items-center justify-center rounded-full border-white/20 text-sm font-medium transition-colors
+              ${currentPage === 1 ? "hidden" : ""}
               ${
                 page === currentPage
                   ? "border-white bg-white text-black"
@@ -53,7 +54,9 @@ export default function Pagination({
       <button
         onClick={() => goTo(currentPage + 1)}
         aria-label="Next page"
-        className={`flex items-center justify-center text-white transition-colors hover:bg-white/10 md:ml-[50px] ${currentPage === totalPages ? "invisible" : ""}`}
+        className={`flex items-center justify-center text-white transition-colors hover:bg-white/10
+          ${currentPage === totalPages ? "invisible" : ""}
+          ${currentPage === 1 ? "md:ml-[0px]" : "md:ml-[50px]"}`}
       >
         Next page
       </button>
