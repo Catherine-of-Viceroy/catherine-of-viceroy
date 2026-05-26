@@ -9,6 +9,7 @@ interface CarouselItem {
   url: string;
   alt?: string;
   isVideo?: boolean;
+  isVertical?: boolean;
   randomizeOrder?: boolean;
 }
 
@@ -63,14 +64,7 @@ export default function LandingCarousel({
   }, [currentIndex]);
 
   const advance = useCallback(() => {
-    setCurrentIndex((prev) => {
-      const nextIndex = prev + 1;
-      if (nextIndex >= validItems.length) {
-        setIsPaused(true);
-        return prev;
-      }
-      return nextIndex;
-    });
+    setCurrentIndex((prev) => (prev + 1) % validItems.length);
     setIsLoading(true);
   }, [validItems.length]);
 
@@ -92,13 +86,6 @@ export default function LandingCarousel({
   }, [advance]);
 
   const handleTap = () => {
-    if (currentIndex === validItems.length - 1 && isPaused) {
-      setCurrentIndex(0);
-      setIsLoading(true);
-      setIsPaused(false);
-      return;
-    }
-    
     setIsPaused((prev) => {
       const next = !prev;
       const activeVideo = videoRefs.current[currentIndex];
@@ -121,7 +108,7 @@ export default function LandingCarousel({
         onClick={handleTap}
       >
         {/* Fade Stack */}
-        <div className="absolute inset-0 overflow-hidden bg-zinc-900">
+        <div className="absolute inset-0 overflow-hidden bg-black">
           {validItems.map((item, index) => (
             <div
               key={index}
@@ -132,7 +119,7 @@ export default function LandingCarousel({
                 <video
                   ref={(el) => { videoRefs.current[index] = el; }}
                   src={item.url}
-                  className="w-full h-full object-cover"
+                  className={item.isVertical ? "h-full w-auto object-contain mx-auto" : "w-full h-full object-cover"}
                   playsInline
                   muted
                   autoPlay={false}
