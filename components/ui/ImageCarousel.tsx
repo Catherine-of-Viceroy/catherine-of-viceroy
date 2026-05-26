@@ -237,13 +237,13 @@ export default function ImageCarousel({
   }, [autoSlide, interval, isAnimating, isPausedForReturn, validImages.length]);
 
   const goToPrevious = () => {
-    if (isAnimating) return;
+    if (isAnimating || realIndex === 0) return;
     setTargetIndex((prev) => prev - 1);
     setIsLoading(true);
   };
 
   const goToNext = () => {
-    if (isAnimating) return;
+    if (isAnimating || realIndex === realImageCount - 1) return;
     setTargetIndex((prev) => prev + 1);
     setIsLoading(true);
   };
@@ -336,14 +336,14 @@ export default function ImageCarousel({
       <div className="flex flex-row justify-center w-full items-center gap-2 mt-2">
         <button
           onClick={goToPrevious}
-          className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"
+          className={`p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10 ${realIndex === 0 ? "opacity-0 pointer-events-none" : ""}`}
           aria-label="Previous image"
         >
           <ChevronLeft size={24} />
         </button>
         <button
           onClick={goToNext}
-          className="p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10"
+          className={`p-2 rounded-full bg-white/50 text-black hover:bg-white/70 transition-colors z-10 ${realIndex === realImageCount - 1 ? "opacity-0 pointer-events-none" : ""}`}
           aria-label="Next image"
         >
           <ChevronRight size={24} />
