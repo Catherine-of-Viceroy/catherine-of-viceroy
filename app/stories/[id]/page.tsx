@@ -67,6 +67,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
                         height={height}
                         className="object-cover"
                         style={{ borderRadius: img.borderRadius ?? "0" }}
+                        crossOrigin="anonymous"
                       />
                     );
                   })}
@@ -111,6 +112,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
                         height={height}
                         className="object-cover"
                         style={{ borderRadius: img.borderRadius ?? "0" }}
+                        crossOrigin="anonymous"
                       />
                     );
                   })}
@@ -144,6 +146,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
                       height={height}
                       className="object-cover"
                       style={{ borderRadius: img.borderRadius ?? "0" }}
+                      crossOrigin="anonymous"
                     />
                   );
                 })}
