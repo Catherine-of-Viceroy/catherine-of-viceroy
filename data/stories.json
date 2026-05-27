@@ -254,6 +254,129 @@
     ],
     "images": [
       {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0356.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0374.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0507.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0560.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_2230.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0572.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0641.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%201/IMG_0678.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      }
+    ],
+    "layout": "half",
+    "imagePosition": "right",
+    "isImageCarousel": true
+  },
+  {
+    "id": 8,
+    "pageId": 4,
+    "title": "",
+    "subtitle": "",
+    "content": [
+      "June 10, 2021 introduces a ladies cravat by means of a silk tie. From the narrow end, it is cinched around her neck and left to hang into her lap, then the broad end brought up to her chin and tucked into the resulting band. A more elegant presentation requires nothing more than just a hint of colour at the neck."
+    ],
+    "images": [
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_3443.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_3764.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_3941.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_4826.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_4919.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_5485.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/carousel%202/IMG_4981.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      }
+    ],
+    "layout": "half",
+    "imagePosition": "left",
+    "isImageCarousel": true
+  },
+  {
+    "id": 9,
+    "pageId": 4,
+    "title": "",
+    "subtitle": "",
+    "content": [
+      "July 5, 2021 and the model is now oriented the other way. The bookcase which holds the floral print was originally positioned in the corner of the room near her foot board. One day, it was repositioned opposite in the room and now adjacent to her head board; most likely a medical team needing some extra space since my last visit.",
+      "To this point in time, the photo array radiates pleasantness and simplicity and consistency. But certain photos rose naturally above the rest. Wonder why? Me, too. I will attempt to explain in brief, but personal, commentary. As well, successful experimentation of a fabric or concept would surely re-appear in future photos."
+    ],
+    "images": [
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/static.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      }
+    ],
+    "layout": "half",
+    "imagePosition": "right",
+    "isImageCarousel": false
+  },
+  {
+    "id": 10,
+    "pageId": 5,
+    "title": "",
+    "subtitle": "",
+    "content": [
+      "August 23, 2021 is a harbinger of the impending fall collection. This fleece jacket is dangling out back with the sleeves draped forward. While this piece is a staple in many a sporty wardrobe, its luxurious nap is only enhanced by the shadow produced from its natural height. And as a bonus, often times, the reverse side is often a different shade. Look for other fleeces in tomato red, grey, and black."
+    ],
+    "images": [
+      {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%201/IMG_0450.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
@@ -299,12 +422,12 @@
     "isImageCarousel": true
   },
   {
-    "id": 8,
-    "pageId": 4,
+    "id": 11,
+    "pageId": 5,
     "title": "",
     "subtitle": "",
     "content": [
-      "June 10, 2021 introduces a ladies cravat by means of a silk tie. From the narrow end, it is cinched around her neck and left to hang into her lap, then the broad end brought up to her chin and tucked into the resulting band. A more elegant presentation requires nothing more than just a hint of colour at the neck."
+      "September 9, 2021 exudes glamour and sophistication, however, it belies the background reality of a series of incidental fumbles and blunders. A single $5 mocha cotton tee, a pressed wool scarf, and the piano runner folded in half. Hair sculpting and pressed powder round out the look. All the stars aligned."
     ],
     "images": [
       {
@@ -339,144 +462,6 @@
       },
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/carousel%202/IMG_5557.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      }
-    ],
-    "layout": "half",
-    "imagePosition": "left",
-    "isImageCarousel": true
-  },
-  {
-    "id": 9,
-    "pageId": 4,
-    "title": "",
-    "subtitle": "",
-    "content": [
-      "July 5, 2021 and the model is now oriented the other way. The bookcase which holds the floral print was originally positioned in the corner of the room near her foot board. One day, it was repositioned opposite in the room and now adjacent to her head board; most likely a medical team needing some extra space since my last visit.",
-      "To this point in time, the photo array radiates pleasantness and simplicity and consistency. But certain photos rose naturally above the rest. Wonder why? Me, too. I will attempt to explain in brief, but personal, commentary. As well, successful experimentation of a fabric or concept would surely re-appear in future photos."
-    ],
-    "images": [
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/IMG_1114%20static.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      }
-    ],
-    "layout": "half",
-    "imagePosition": "right",
-    "isImageCarousel": false
-  },
-  {
-    "id": 10,
-    "pageId": 5,
-    "title": "",
-    "subtitle": "",
-    "content": [
-      "August 23, 2021 is a harbinger of the impending fall collection. This fleece jacket is dangling out back with the sleeves draped forward. While this piece is a staple in many a sporty wardrobe, its luxurious nap is only enhanced by the shadow produced from its natural height. And as a bonus, often times, the reverse side is often a different shade. Look for other fleeces in tomato red, grey, and black."
-    ],
-    "images": [
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_1555.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_1934.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2139.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2581.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2592.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2693.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_2802.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3099.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3234.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3269.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3275.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3308.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%201/IMG_3562.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      }
-    ],
-    "layout": "half",
-    "imagePosition": "right",
-    "isImageCarousel": true
-  },
-  {
-    "id": 11,
-    "pageId": 5,
-    "title": "",
-    "subtitle": "",
-    "content": [
-      "September 9, 2021 exudes glamour and sophistication, however, it belies the background reality of a series of incidental fumbles and blunders. A single $5 mocha cotton tee, a pressed wool scarf, and the piano runner folded in half. Hair sculpting and pressed powder round out the look. All the stars aligned."
-    ],
-    "images": [
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_1704.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_1934.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_2230.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_5191.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/carousel%202/IMG_5200.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
