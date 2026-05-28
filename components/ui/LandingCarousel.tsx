@@ -24,6 +24,8 @@ export default function LandingCarousel({
 }: LandingCarouselProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [isPaused, setIsPaused] = useState(false);
+  const [hasEnded, setHasEnded] = useState(false);
+  const [showPlayButton, setShowPlayButton] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
@@ -47,11 +49,12 @@ export default function LandingCarousel({
     return null;
   }
 
-  const currentItem = validItems[currentIndex];
+  const currentItem = currentIndex >= 0 ? validItems[currentIndex] : null;
   const isCurrentVideo = currentItem?.isVideo;
 
   // Play video on active slide, pause all others
   useEffect(() => {
+    if (currentIndex < 0) return;
     videoRefs.current.forEach((video, index) => {
       if (!video) return;
       if (index === currentIndex) {
@@ -64,13 +67,23 @@ export default function LandingCarousel({
   }, [currentIndex]);
 
   const advance = useCallback(() => {
-    setCurrentIndex((prev) => (prev + 1) % validItems.length);
+    setCurrentIndex((prev) => {
+      const nextIndex = prev + 1;
+      if (nextIndex >= validItems.length) {
+        setHasEnded(true);
+        setTimeout(() => {
+          setShowPlayButton(true);
+        }, 2400);
+        return prev;
+      }
+      return nextIndex;
+    });
     setIsLoading(true);
   }, [validItems.length]);
 
-  // Autoplay: advance every `interval` ms unless paused or current slide is video
+  // Autoplay: advance every `interval` ms unless paused, ended, or current slide is video
   useEffect(() => {
-    if (isPaused || isCurrentVideo) {
+    if (isPaused || hasEnded || isCurrentVideo) {
       if (timerRef.current) clearInterval(timerRef.current);
       return;
     }
@@ -78,7 +91,7 @@ export default function LandingCarousel({
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [isPaused, isCurrentVideo, interval, advance]);
+  }, [isPaused, hasEnded, isCurrentVideo, interval, advance]);
 
   // When a video slide ends, advance to next slide
   const handleVideoEnded = useCallback(() => {
@@ -86,6 +99,15 @@ export default function LandingCarousel({
   }, [advance]);
 
   const handleTap = () => {
+    if (hasEnded) {
+      setShowPlayButton(false);
+      setHasEnded(false);
+      setIsPaused(false);
+      setCurrentIndex(0);
+      setIsLoading(true);
+      return;
+    }
+    
     setIsPaused((prev) => {
       const next = !prev;
       const activeVideo = videoRefs.current[currentIndex];
@@ -113,7 +135,7 @@ export default function LandingCarousel({
             <div
               key={index}
               className="absolute inset-0 transition-opacity duration-[2400ms] ease-in-out"
-              style={{ opacity: index === currentIndex ? 1 : 0 }}
+              style={{ opacity: index === currentIndex ? (hasEnded && index === validItems.length - 1 ? 0 : 1) : 0 }}
             >
               {item.isVideo ? (
                 <video
@@ -173,8 +195,8 @@ export default function LandingCarousel({
             ))}
           </div>
         )} */}
-        {/* Play icon overlay when paused */}
-        {isPaused && (
+        {/* Play icon overlay when paused or ended */}
+        {(isPaused || showPlayButton) && (
           <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
             <div className="p-4 rounded-full bg-black/40">
               <Play size={48} className="text-white" fill="white" />
