@@ -56,6 +56,12 @@
     "randomizeOrder": true
   },
   {
+    "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/Landing%20Page/blue_c.mp4",
+    "alt": "Landing video blue",
+    "isVideo": true,
+    "randomizeOrder": true
+  },
+  {
     "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/Landing%20Page/02.jpg",
     "alt": "Landing image 2",
     "isVideo": false,
