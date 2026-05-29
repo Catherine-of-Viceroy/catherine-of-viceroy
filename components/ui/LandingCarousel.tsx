@@ -27,6 +27,7 @@ export default function LandingCarousel({
   const [hasEnded, setHasEnded] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(false);
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+  const [musicInitialized, setMusicInitialized] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -79,8 +80,10 @@ export default function LandingCarousel({
     // Try to autoplay music if browser allows
     audioRef.current.play().then(() => {
       setIsMusicPlaying(true);
+      setMusicInitialized(true);
     }).catch(() => {
       // Autoplay blocked - music stays off, user can enable via button
+      setMusicInitialized(true);
     });
     
     return () => {
@@ -93,14 +96,14 @@ export default function LandingCarousel({
 
   // Control music based on isMusicPlaying and isPaused state
   useEffect(() => {
-    if (!audioRef.current) return;
+    if (!audioRef.current || !musicInitialized) return;
     
     if (isMusicPlaying && !isPaused) {
       audioRef.current.play().catch(() => {});
-    } else if (isPaused) {
+    } else if (!isMusicPlaying || isPaused) {
       audioRef.current.pause();
     }
-  }, [isMusicPlaying, isPaused]);
+  }, [isMusicPlaying, isPaused, musicInitialized]);
 
   // Delay music pause until fade-out completes
   useEffect(() => {
