@@ -24,8 +24,13 @@ export default function LandingCarousel({
 }: LandingCarouselProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [isPaused, setIsPaused] = useState(false);
+  const [hasEnded, setHasEnded] = useState(false);
+  const [showPlayButton, setShowPlayButton] = useState(false);
+  const [audioStarted, setAudioStarted] = useState(false);
+  const [autoplayBlocked, setAutoplayBlocked] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   // Filter out items with empty URLs
   const filteredItems = items.filter((item) => item.url && item.url.trim() !== "");
@@ -47,30 +52,91 @@ export default function LandingCarousel({
     return null;
   }
 
-  const currentItem = validItems[currentIndex];
+  const currentItem = currentIndex >= 0 ? validItems[currentIndex] : null;
   const isCurrentVideo = currentItem?.isVideo;
 
   // Play video on active slide, pause all others
   useEffect(() => {
+    if (currentIndex < 0) return;
     videoRefs.current.forEach((video, index) => {
       if (!video) return;
-      if (index === currentIndex) {
+      if (index === currentIndex && !autoplayBlocked) {
         video.currentTime = 0;
         video.play().catch(() => {});
       } else {
         video.pause();
       }
     });
-  }, [currentIndex]);
+  }, [currentIndex, autoplayBlocked]);
+
+  // Initialize background music
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
+    audioRef.current = new Audio('https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/Landing%20Page/music_for_creators-never-surrender-127158.mp3');
+    audioRef.current.loop = true;
+    audioRef.current.volume = 0.5;
+    
+    // Try to autoplay music on load
+    audioRef.current.play().then(() => {
+      setAudioStarted(true);
+    }).catch(() => {
+      // Autoplay blocked - pause slideshow and show play button
+      setAutoplayBlocked(true);
+      setIsPaused(true);
+      setShowPlayButton(true);
+    });
+    
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, []);
+
+  // Control music based on pause state
+  useEffect(() => {
+    if (!audioRef.current || !audioStarted) return;
+    
+    if (isPaused) {
+      audioRef.current.pause();
+    } else if (!hasEnded) {
+      audioRef.current.play().catch(() => {});
+    }
+  }, [isPaused, hasEnded, audioStarted]);
+
+  // Delay music pause until fade-out completes
+  useEffect(() => {
+    if (!audioRef.current || !hasEnded) return;
+    
+    const timer = setTimeout(() => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+    }, 2400);
+    
+    return () => clearTimeout(timer);
+  }, [hasEnded]);
 
   const advance = useCallback(() => {
-    setCurrentIndex((prev) => (prev + 1) % validItems.length);
+    setCurrentIndex((prev) => {
+      const nextIndex = prev + 1;
+      if (nextIndex >= validItems.length) {
+        setHasEnded(true);
+        setTimeout(() => {
+          setShowPlayButton(true);
+        }, 2400);
+        return prev;
+      }
+      return nextIndex;
+    });
     setIsLoading(true);
   }, [validItems.length]);
 
-  // Autoplay: advance every `interval` ms unless paused or current slide is video
+  // Autoplay: advance every `interval` ms unless paused, ended, or current slide is video
   useEffect(() => {
-    if (isPaused || isCurrentVideo) {
+    if (isPaused || hasEnded || isCurrentVideo) {
       if (timerRef.current) clearInterval(timerRef.current);
       return;
     }
@@ -78,7 +144,7 @@ export default function LandingCarousel({
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [isPaused, isCurrentVideo, interval, advance]);
+  }, [isPaused, hasEnded, isCurrentVideo, interval, advance]);
 
   // When a video slide ends, advance to next slide
   const handleVideoEnded = useCallback(() => {
@@ -86,6 +152,38 @@ export default function LandingCarousel({
   }, [advance]);
 
   const handleTap = () => {
+    // Handle autoplay blocked state - start everything
+    if (autoplayBlocked && !audioStarted) {
+      if (audioRef.current) {
+        audioRef.current.play().catch(() => {});
+        setAudioStarted(true);
+      }
+      setAutoplayBlocked(false);
+      setIsPaused(false);
+      setShowPlayButton(false);
+      return;
+    }
+    
+    // Start audio on first user interaction (if not already started)
+    if (!audioStarted && audioRef.current) {
+      audioRef.current.play().catch(() => {});
+      setAudioStarted(true);
+    }
+    
+    if (hasEnded) {
+      setShowPlayButton(false);
+      setHasEnded(false);
+      setIsPaused(false);
+      setCurrentIndex(0);
+      setIsLoading(true);
+      // Restart music from beginning
+      if (audioRef.current) {
+        audioRef.current.currentTime = 0;
+        audioRef.current.play().catch(() => {});
+      }
+      return;
+    }
+    
     setIsPaused((prev) => {
       const next = !prev;
       const activeVideo = videoRefs.current[currentIndex];
@@ -113,7 +211,7 @@ export default function LandingCarousel({
             <div
               key={index}
               className="absolute inset-0 transition-opacity duration-[2400ms] ease-in-out"
-              style={{ opacity: index === currentIndex ? 1 : 0 }}
+              style={{ opacity: index === currentIndex ? (hasEnded && index === validItems.length - 1 ? 0 : 1) : 0 }}
             >
               {item.isVideo ? (
                 <video
@@ -173,8 +271,8 @@ export default function LandingCarousel({
             ))}
           </div>
         )} */}
-        {/* Play icon overlay when paused */}
-        {isPaused && (
+        {/* Play icon overlay when paused or ended */}
+        {(isPaused || showPlayButton) && (
           <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
             <div className="p-4 rounded-full bg-black/40">
               <Play size={48} className="text-white" fill="white" />
