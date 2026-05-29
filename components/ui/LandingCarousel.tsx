@@ -76,6 +76,13 @@ export default function LandingCarousel({
     audioRef.current.loop = true;
     audioRef.current.volume = 0.5;
     
+    // Try to autoplay music if browser allows
+    audioRef.current.play().then(() => {
+      setIsMusicPlaying(true);
+    }).catch(() => {
+      // Autoplay blocked - music stays off, user can enable via button
+    });
+    
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
