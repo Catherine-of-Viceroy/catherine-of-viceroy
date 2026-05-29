@@ -26,8 +26,7 @@ export default function LandingCarousel({
   const [isPaused, setIsPaused] = useState(false);
   const [hasEnded, setHasEnded] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(false);
-  const [audioStarted, setAudioStarted] = useState(false);
-  const [autoplayBlocked, setAutoplayBlocked] = useState(false);
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -60,14 +59,14 @@ export default function LandingCarousel({
     if (currentIndex < 0) return;
     videoRefs.current.forEach((video, index) => {
       if (!video) return;
-      if (index === currentIndex && !autoplayBlocked) {
+      if (index === currentIndex) {
         video.currentTime = 0;
         video.play().catch(() => {});
       } else {
         video.pause();
       }
     });
-  }, [currentIndex, autoplayBlocked]);
+  }, [currentIndex]);
 
   // Initialize background music
   useEffect(() => {
@@ -77,16 +76,6 @@ export default function LandingCarousel({
     audioRef.current.loop = true;
     audioRef.current.volume = 0.5;
     
-    // Try to autoplay music on load
-    audioRef.current.play().then(() => {
-      setAudioStarted(true);
-    }).catch(() => {
-      // Autoplay blocked - pause slideshow and show play button
-      setAutoplayBlocked(true);
-      setIsPaused(true);
-      setShowPlayButton(true);
-    });
-    
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
@@ -95,16 +84,16 @@ export default function LandingCarousel({
     };
   }, []);
 
-  // Control music based on pause state
+  // Control music based on isMusicPlaying and isPaused state
   useEffect(() => {
-    if (!audioRef.current || !audioStarted) return;
+    if (!audioRef.current) return;
     
-    if (isPaused) {
-      audioRef.current.pause();
-    } else if (!hasEnded) {
+    if (isMusicPlaying && !isPaused) {
       audioRef.current.play().catch(() => {});
+    } else if (isPaused) {
+      audioRef.current.pause();
     }
-  }, [isPaused, hasEnded, audioStarted]);
+  }, [isMusicPlaying, isPaused]);
 
   // Delay music pause until fade-out completes
   useEffect(() => {
@@ -120,6 +109,15 @@ export default function LandingCarousel({
   }, [hasEnded]);
 
   const advance = useCallback(() => {
+    // Check if we're on the last slide before advancing
+    if (currentIndex >= validItems.length - 1) {
+      setHasEnded(true);
+      setTimeout(() => {
+        setShowPlayButton(true);
+      }, 2400);
+      return;
+    }
+    
     setCurrentIndex((prev) => {
       const nextIndex = prev + 1;
       if (nextIndex >= validItems.length) {
@@ -132,7 +130,7 @@ export default function LandingCarousel({
       return nextIndex;
     });
     setIsLoading(true);
-  }, [validItems.length]);
+  }, [validItems.length, currentIndex]);
 
   // Autoplay: advance every `interval` ms unless paused, ended, or current slide is video
   useEffect(() => {
@@ -148,36 +146,39 @@ export default function LandingCarousel({
 
   // When a video slide ends, advance to next slide
   const handleVideoEnded = useCallback(() => {
-    advance();
-  }, [advance]);
+    if (currentIndex >= validItems.length - 1) {
+      // Last slide - end the carousel
+      setHasEnded(true);
+      setTimeout(() => {
+        setShowPlayButton(true);
+      }, 2400);
+    } else {
+      advance();
+    }
+  }, [advance, currentIndex, validItems.length]);
+
+  const toggleMusic = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (!audioRef.current) return;
+    
+    if (isMusicPlaying) {
+      audioRef.current.pause();
+      setIsMusicPlaying(false);
+    } else {
+      audioRef.current.play().catch(() => {});
+      setIsMusicPlaying(true);
+    }
+  };
 
   const handleTap = () => {
-    // Handle autoplay blocked state - start everything
-    if (autoplayBlocked && !audioStarted) {
-      if (audioRef.current) {
-        audioRef.current.play().catch(() => {});
-        setAudioStarted(true);
-      }
-      setAutoplayBlocked(false);
-      setIsPaused(false);
-      setShowPlayButton(false);
-      return;
-    }
-    
-    // Start audio on first user interaction (if not already started)
-    if (!audioStarted && audioRef.current) {
-      audioRef.current.play().catch(() => {});
-      setAudioStarted(true);
-    }
-    
     if (hasEnded) {
       setShowPlayButton(false);
       setHasEnded(false);
       setIsPaused(false);
       setCurrentIndex(0);
       setIsLoading(true);
-      // Restart music from beginning
-      if (audioRef.current) {
+      // Restart music from beginning if it was playing
+      if (audioRef.current && isMusicPlaying) {
         audioRef.current.currentTime = 0;
         audioRef.current.play().catch(() => {});
       }
@@ -194,17 +195,43 @@ export default function LandingCarousel({
           activeVideo.play().catch(() => {});
         }
       }
+      
+      // Pause/resume music along with carousel
+      if (audioRef.current && isMusicPlaying) {
+        if (next) {
+          audioRef.current.pause();
+        } else {
+          audioRef.current.play().catch(() => {});
+        }
+      }
+      
       return next;
     });
   };
 
   return (
     <div className="flex flex-col w-full">
+      <div 
+        className="relative mx-auto"
+        style={{ width: "870px", maxWidth: "100%", height: "50px" }}>
+        <button
+            onClick={toggleMusic}
+            className="absolute right-0 z-30 p-3 rounded-full bg-black/50 hover:bg-black/70 transition-colors"
+            aria-label={isMusicPlaying ? "Pause music" : "Play music"}
+          >
+            {isMusicPlaying ? (
+              <Image src="/images/music_on.svg" alt="Music on" width={24} height={24} />
+            ) : (
+              <Image src="/images/music_off.svg" alt="Music off" width={24} height={24} />
+            )}
+        </button>
+      </div>
       <div
         className="relative mx-auto cursor-pointer"
         style={{ width: "870px", maxWidth: "100%", height: "600px", maxHeight: "calc(100vw * 0.6897)" }}
         onClick={handleTap}
       >
+        
         {/* Fade Stack */}
         <div className="absolute inset-0 overflow-hidden bg-black">
           {validItems.map((item, index) => (
@@ -271,6 +298,8 @@ export default function LandingCarousel({
             ))}
           </div>
         )} */}
+        {/* Music control button - top right */}
+
         {/* Play icon overlay when paused or ended */}
         {(isPaused || showPlayButton) && (
           <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
