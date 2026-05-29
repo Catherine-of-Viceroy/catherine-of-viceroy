@@ -26,8 +26,11 @@ export default function LandingCarousel({
   const [isPaused, setIsPaused] = useState(false);
   const [hasEnded, setHasEnded] = useState(false);
   const [showPlayButton, setShowPlayButton] = useState(false);
+  const [audioStarted, setAudioStarted] = useState(false);
+  const [autoplayBlocked, setAutoplayBlocked] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   // Filter out items with empty URLs
   const filteredItems = items.filter((item) => item.url && item.url.trim() !== "");
@@ -57,14 +60,64 @@ export default function LandingCarousel({
     if (currentIndex < 0) return;
     videoRefs.current.forEach((video, index) => {
       if (!video) return;
-      if (index === currentIndex) {
+      if (index === currentIndex && !autoplayBlocked) {
         video.currentTime = 0;
         video.play().catch(() => {});
       } else {
         video.pause();
       }
     });
-  }, [currentIndex]);
+  }, [currentIndex, autoplayBlocked]);
+
+  // Initialize background music
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
+    audioRef.current = new Audio('https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/Landing%20Page/music_for_creators-never-surrender-127158.mp3');
+    audioRef.current.loop = true;
+    audioRef.current.volume = 0.5;
+    
+    // Try to autoplay music on load
+    audioRef.current.play().then(() => {
+      setAudioStarted(true);
+    }).catch(() => {
+      // Autoplay blocked - pause slideshow and show play button
+      setAutoplayBlocked(true);
+      setIsPaused(true);
+      setShowPlayButton(true);
+    });
+    
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, []);
+
+  // Control music based on pause state
+  useEffect(() => {
+    if (!audioRef.current || !audioStarted) return;
+    
+    if (isPaused) {
+      audioRef.current.pause();
+    } else if (!hasEnded) {
+      audioRef.current.play().catch(() => {});
+    }
+  }, [isPaused, hasEnded, audioStarted]);
+
+  // Delay music pause until fade-out completes
+  useEffect(() => {
+    if (!audioRef.current || !hasEnded) return;
+    
+    const timer = setTimeout(() => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+    }, 2400);
+    
+    return () => clearTimeout(timer);
+  }, [hasEnded]);
 
   const advance = useCallback(() => {
     setCurrentIndex((prev) => {
@@ -99,12 +152,35 @@ export default function LandingCarousel({
   }, [advance]);
 
   const handleTap = () => {
+    // Handle autoplay blocked state - start everything
+    if (autoplayBlocked && !audioStarted) {
+      if (audioRef.current) {
+        audioRef.current.play().catch(() => {});
+        setAudioStarted(true);
+      }
+      setAutoplayBlocked(false);
+      setIsPaused(false);
+      setShowPlayButton(false);
+      return;
+    }
+    
+    // Start audio on first user interaction (if not already started)
+    if (!audioStarted && audioRef.current) {
+      audioRef.current.play().catch(() => {});
+      setAudioStarted(true);
+    }
+    
     if (hasEnded) {
       setShowPlayButton(false);
       setHasEnded(false);
       setIsPaused(false);
       setCurrentIndex(0);
       setIsLoading(true);
+      // Restart music from beginning
+      if (audioRef.current) {
+        audioRef.current.currentTime = 0;
+        audioRef.current.play().catch(() => {});
+      }
       return;
     }
     
