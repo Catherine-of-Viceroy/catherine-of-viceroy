@@ -68,12 +68,6 @@
     "randomizeOrder": true
   },
   {
-    "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/Landing%20Page/opera_c.mp4",
-    "alt": "Landing video opera",
-    "isVideo": true,
-    "randomizeOrder": true
-  },
-  {
     "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/Landing%20Page/02.jpg",
     "alt": "Landing image 2",
     "isVideo": false,
