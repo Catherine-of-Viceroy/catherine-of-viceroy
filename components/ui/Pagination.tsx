@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 interface PaginationProps {
   currentPage: number;
@@ -47,6 +48,15 @@ export default function Pagination({
                   : "border-white/20 bg-white/20 text-white/20 hover:border-white/30 hover:bg-white/30"
               }`}
           >
+            {page === 1 && (
+              <Image 
+                src="/images/icon_home.svg" 
+                alt="Home" 
+                width={24} 
+                height={24}
+                className="opacity-inherit"
+              />
+            )}
           </button>
         ))}
       </div>
