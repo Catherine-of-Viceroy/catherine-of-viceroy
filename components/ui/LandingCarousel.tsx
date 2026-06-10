@@ -113,7 +113,7 @@ export default function LandingCarousel({
       if (audioRef.current) {
         audioRef.current.pause();
       }
-    }, 2400);
+    }, 2000);
     
     return () => clearTimeout(timer);
   }, [hasEnded]);
@@ -124,7 +124,7 @@ export default function LandingCarousel({
       setHasEnded(true);
       setTimeout(() => {
         setShowPlayButton(true);
-      }, 2400);
+      }, 2000);
       return;
     }
     
@@ -134,7 +134,7 @@ export default function LandingCarousel({
         setHasEnded(true);
         setTimeout(() => {
           setShowPlayButton(true);
-        }, 2400);
+        }, 2000);
         return prev;
       }
       return nextIndex;
@@ -161,7 +161,7 @@ export default function LandingCarousel({
       setHasEnded(true);
       setTimeout(() => {
         setShowPlayButton(true);
-      }, 2400);
+      }, 2000);
     } else {
       advance();
     }
@@ -247,7 +247,7 @@ export default function LandingCarousel({
           {validItems.map((item, index) => (
             <div
               key={index}
-              className="absolute inset-0 transition-opacity duration-[2400ms] ease-in-out"
+              className="absolute inset-0 transition-opacity duration-[2000ms] ease-in-out"
               style={{ opacity: index === currentIndex ? (hasEnded && index === validItems.length - 1 ? 0 : 1) : 0 }}
             >
               {item.isVideo ? (
