@@ -22,7 +22,7 @@ export default function Card({ image }: CardProps) {
         style={{ borderRadius: image.borderRadius ?? "1rem", height: 600 }}
       />
       {image.description && (
-        <p className="mt-2 text-sm text-white/80">{image.description}</p>
+        <p className="mt-2">{image.description}</p>
       )}
     </div>
   );

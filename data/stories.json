@@ -1118,7 +1118,7 @@
     "title": "",
     "subtitle": "",
     "content": [
-      "Eventually, one binder clip was added to the tote bag and proved invaluable in tidying up things around the edge. For example, in the early days and trying to imply a cozy sweater, would have dumped a cozy sweater on moms lap and pulled its sleeves up and over her shoulders for the appearance of 'sweater' (IMG_0396.JPG). So with the sweater's cuffs now freely dangling out back, I had to either crop the shot or ensure her hairdo out back was bulky enough to distract from the numerous gaps. Later photos, of similar concept, would have the sweater dangling out back with the arms up and over the front for a more convincing appearance."
+      "Eventually, one binder clip was added to the tote bag and proved invaluable in tidying up things around the edge. For example, in the early days and trying to imply a cozy sweater, would have dumped a cozy sweater on moms lap and pulled its sleeves up and over her shoulders for the appearance of 'sweater'."
     ],
     "images": [],
     "layout": "full",
@@ -1126,6 +1126,35 @@
   },
   {
     "id": 32,
+    "pageId": 10,
+    "title": "",
+    "subtitle": "",
+    "content": [],
+    "images": [
+      {
+        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011/IMG_0396.jpg",
+        "isVideo": false,
+        "description": "IMG 0396"
+      }
+    ],
+    "layout": "full",
+    "imagePosition": "center",
+    "isImageCarousel": true
+  },
+  {
+    "id": 33,
+    "pageId": 10,
+    "title": "",
+    "subtitle": "",
+    "content": [
+      "So with the sweater's cuffs now freely dangling out back, I had to either crop the shot or ensure her hairdo out back was bulky enough to distract from the numerous gaps. Later photos, of similar concept, would have the sweater dangling out back with the arms up and over the front for a more convincing appearance."
+    ],
+    "images": [],
+    "layout": "full",
+    "isImageCarousel": false
+  },
+  {
+    "id": 34,
     "pageId": 11,
     "title": "STAGING TECHNIQUES TO PHOTOGRAPH A FRAIL CENTENARIAN WOMAN...",
     "subtitle": "",
@@ -1142,7 +1171,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 33,
+    "id": 35,
     "pageId": 11,
     "title": "",
     "subtitle": "",
@@ -1163,7 +1192,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 34,
+    "id": 36,
     "pageId": 11,
     "title": "",
     "subtitle": "",
@@ -1178,7 +1207,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 35,
+    "id": 37,
     "pageId": 11,
     "title": "PHOTOGRAPHING A WHEELCHAIR-BOUND CENTENARIAN WOMAN...",
     "subtitle": "",
@@ -1194,7 +1223,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 36,
+    "id": 38,
     "pageId": 11,
     "title": "CONVERSING WITH A CENTENARIAN WOMAN WITH MEMORY ISSUES...",
     "subtitle": "",
@@ -1212,7 +1241,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 37,
+    "id": 39,
     "pageId": 11,
     "title": "AND THE ALL IMPORTANT SHOUT OUTS...",
     "subtitle": "",
@@ -1229,7 +1258,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 38,
+    "id": 40,
     "pageId": 11,
     "title": "AND WHAT ABOUT ME...",
     "subtitle": "",
@@ -1245,7 +1274,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 39,
+    "id": 41,
     "pageId": 11,
     "title": "AND FINALLY, SOME RANDOM THOUGHTS...",
     "subtitle": "",
@@ -1260,7 +1289,7 @@
     "isImageCarousel": false
   },
   {
-    "id": 40,
+    "id": 42,
     "pageId": 11,
     "title": "",
     "subtitle": "",
