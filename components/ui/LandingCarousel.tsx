@@ -226,7 +226,7 @@ export default function LandingCarousel({
         style={{ width: "870px", maxWidth: "100%", height: "50px" }}>
         <button
             onClick={toggleMusic}
-            className="absolute right-0 z-30 p-3 rounded-full bg-black/50 hover:bg-black/70 transition-colors"
+            className={`absolute right-0 z-30 p-3 rounded-full bg-black/50 hover:bg-black/70 transition-colors ${!isMusicPlaying ? 'animate-pulse' : ''}`}
             aria-label={isMusicPlaying ? "Pause music" : "Play music"}
           >
             {isMusicPlaying ? (
