@@ -968,7 +968,7 @@
     ],
     "layout": "half",
     "imagePosition": "left",
-    "isImageCarousel": false,
+    "isImageCarousel": true,
     "leftSize": "lg:w-2/3",
     "rightSize":"lg:w-1/3",
     "isTwoImageWidth": true
@@ -1124,7 +1124,8 @@
       {
         "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011/IMG_0396.jpg",
         "isVideo": false,
-        "description": "IMG 0396"
+        "description": "IMG 0396",
+        "padding": "none"
       }
     ],
     "layout": "full",
