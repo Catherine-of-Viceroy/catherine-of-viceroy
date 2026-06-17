@@ -24,8 +24,10 @@ export default async function StoryPage({ params }: StoryPageProps) {
     if (story.length === 0) {
       return <div>Story not found</div>;
     }
-    return story.map((story) => (
-      <div key={story.id} className="w-full py-10">
+    return story.map((story) => {
+      const hasNoPadding = story.images?.some((img: { padding?: string }) => img.padding === "none");
+      return (
+      <div key={story.id} className={`w-full ${hasNoPadding ? "" : "py-10"}`}>
       {story.layout == "full" && (
         <div>
           {story.title && <h2>{story.title}</h2>} 
@@ -158,8 +160,8 @@ export default async function StoryPage({ params }: StoryPageProps) {
         </div>
       )}
       </div>
-    )
-  )};
+    );
+  })};
 
   return (
     <div className="flex flex-col flex-1 items-center font-sans dark:bg-black px-4 md:px-[60px] w-full max-w-[1440px] mx-auto">
