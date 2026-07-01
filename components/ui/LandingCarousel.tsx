@@ -73,11 +73,11 @@ export default function LandingCarousel({
   // Initialize background music
   useEffect(() => {
     if (typeof window === 'undefined') return;
-    
+
     audioRef.current = new Audio('https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/Landing%20Page/music_for_creators-never-surrender-127158.mp3');
-    audioRef.current.loop = true;
+    audioRef.current.loop = false;
     audioRef.current.volume = 0.5;
-    
+
     // Try to autoplay music if browser allows
     audioRef.current.play().then(() => {
       setIsMusicPlaying(true);
@@ -86,7 +86,7 @@ export default function LandingCarousel({
       // Autoplay blocked - music stays off, user can enable via button
       setMusicInitialized(true);
     });
-    
+
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
@@ -106,17 +106,11 @@ export default function LandingCarousel({
     }
   }, [isMusicPlaying, isPaused, musicInitialized]);
 
-  // Delay music pause until fade-out completes
+  // Stop music immediately when carousel ends
   useEffect(() => {
     if (!audioRef.current || !hasEnded) return;
     
-    const timer = setTimeout(() => {
-      if (audioRef.current) {
-        audioRef.current.pause();
-      }
-    }, 2000);
-    
-    return () => clearTimeout(timer);
+    audioRef.current.pause();
   }, [hasEnded]);
 
   const advance = useCallback(() => {
@@ -187,10 +181,12 @@ export default function LandingCarousel({
     setIsPaused(false);
     setCurrentIndex(0);
     setIsLoading(true);
-    // Restart music from beginning if it was playing
-    if (audioRef.current && isMusicPlaying) {
+    // Restart music from beginning
+    if (audioRef.current) {
       audioRef.current.currentTime = 0;
-      audioRef.current.play().catch(() => {});
+      audioRef.current.play().then(() => {
+        setIsMusicPlaying(true);
+      }).catch(() => {});
     }
   };
 
