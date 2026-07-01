@@ -150,5 +150,12 @@
     "alt": "Landing image 7",
     "isVideo": false,
     "randomizeOrder": false
+  },
+  {
+    "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/Landing%20Page/final%20frame.jpg",
+    "alt": "Landing image final frame",
+    "isVideo": false,
+    "randomizeOrder": false,
+    "link": "https://www.behance.net/gallery/251983135/Legacy-Portraits"
   }
 ]

@@ -11,6 +11,7 @@ interface CarouselItem {
   isVideo?: boolean;
   isVertical?: boolean;
   randomizeOrder?: boolean;
+  link?: string;
 }
 
 interface LandingCarouselProps {
@@ -180,18 +181,26 @@ export default function LandingCarousel({
     }
   };
 
+  const handleReplay = () => {
+    setShowPlayButton(false);
+    setHasEnded(false);
+    setIsPaused(false);
+    setCurrentIndex(0);
+    setIsLoading(true);
+    // Restart music from beginning if it was playing
+    if (audioRef.current && isMusicPlaying) {
+      audioRef.current.currentTime = 0;
+      audioRef.current.play().catch(() => {});
+    }
+  };
+
   const handleTap = () => {
-    if (hasEnded) {
-      setShowPlayButton(false);
-      setHasEnded(false);
-      setIsPaused(false);
-      setCurrentIndex(0);
-      setIsLoading(true);
-      // Restart music from beginning if it was playing
-      if (audioRef.current && isMusicPlaying) {
-        audioRef.current.currentTime = 0;
-        audioRef.current.play().catch(() => {});
-      }
+    // Don't open link if carousel has ended
+    if (hasEnded) return;
+
+    // Check if current item has a link
+    if (currentItem?.link) {
+      window.open(currentItem.link, '_blank');
       return;
     }
     
@@ -312,10 +321,13 @@ export default function LandingCarousel({
 
         {/* Play icon overlay when paused or ended */}
         {(isPaused || showPlayButton) && (
-          <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-            <div className="p-4 rounded-full bg-black/40">
+          <div className="absolute inset-0 flex items-center justify-center z-20">
+            <button
+              onClick={hasEnded ? handleReplay : undefined}
+              className={`p-4 rounded-full bg-black/40 ${hasEnded ? 'cursor-pointer' : 'pointer-events-none'}`}
+            >
               <Play size={48} className="text-white" fill="white" />
-            </div>
+            </button>
           </div>
         )}
       </div>
