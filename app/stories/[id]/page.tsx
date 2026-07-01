@@ -1,6 +1,6 @@
 import Header from "@/components/ui/Header";
 import SplitLayout from "@/components/layout/SplitLayout";
-import contentData from "@/data/stories.json";
+import { getStories } from "@/lib/data-utils";
 import Pagination from "@/components/ui/Pagination";
 import ImageCarousel from "@/components/ui/ImageCarousel";
 import Card from "@/components/ui/Card";
@@ -10,15 +10,17 @@ interface StoryPageProps {
 
 export async function generateStaticParams() {
   // Get unique pageIds from stories data
-  const uniquePageIds = [...new Set(contentData.map((story) => story.pageId))];
-  return uniquePageIds.map((pageId) => ({
+  const contentData = getStories();
+  const uniquePageIds = [...new Set(contentData.map((story: any) => story.pageId))];
+  return uniquePageIds.map((pageId: any) => ({
     id: pageId.toString(),
   }));
 }
 
 export default async function StoryPage({ params }: StoryPageProps) {
   const { id } = await params;
-  const story = contentData.filter((story) => story.pageId === parseInt(id));
+  const contentData = getStories();
+  const story = contentData.filter((story: any) => story.pageId === parseInt(id));
 
   const renderContent = () => {
     if (story.length === 0) {

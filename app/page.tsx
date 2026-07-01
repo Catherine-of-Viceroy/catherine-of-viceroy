@@ -1,10 +1,11 @@
 import Header from "@/components/ui/Header";
 import LandingCarousel from "@/components/ui/LandingCarousel";
 import Pagination from "@/components/ui/Pagination";
-import landingItems from "@/data/landing.json";
+import { getLandingItems } from "@/lib/data-utils";
 import Image from "next/image";
 
 export default function Home() {
+  const landingItems = getLandingItems();
   return (
     <div className="flex flex-col flex-1 items-center font-sans dark:bg-black px-4 md:px-[60px] w-full max-w-[1440px] mx-auto">
       <Header />

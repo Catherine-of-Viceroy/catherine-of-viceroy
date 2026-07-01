@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "pageId":2,
+    "pageId": 2,
     "title": "HER STORY...",
     "subtitle": "",
     "content": [
@@ -11,25 +11,24 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%202/01.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%202/01.jpg",
         "isVideo": false,
         "borderRadius": "1rem",
         "width": "48%"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%202/02.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%202/02.jpg",
         "isVideo": false,
         "borderRadius": "1rem",
         "width": "48%"
       }
-
     ],
     "layout": "half",
     "imagePosition": "right",
-    "isImageCarousel":false
+    "isImageCarousel": false
   },
   {
-    "id": 2,  
+    "id": 2,
     "pageId": 2,
     "title": "AND ONWARD TO CURRENT TIMES...",
     "subtitle": "",
@@ -46,11 +45,10 @@
       "And then a health crisis descended upon the globe. Residents were isolated in their room with tray service for meals, the salon closed, and strict visitation measures were implemented to protect the health and wellbeing of everyone inside. I was allowed in Monday 11am and Thursday 11am. So I seized this opportunity to style mom to my best effort with what I had on hand, photograph the result, and send the best onward. Eventually the facility rules were relaxed where I could visit each and every day at 11am. With seven original stylings required each week, the challenge was on.",
       "A red canvas tote bag from mom's preferred bakery was put into service. Basic kit consisted of a comb, a brush, a gel and a pink two speed travel hairdryer. ",
       "So with the basic kit organized, onwards and upwards. Over time, however, the basics list expanded to include a selection of pressed face powders, a black knit scarf, a mousse, a binder clip, a 'structured lapel', and a black velvet elastic-waisted pant."
-
     ],
     "images": [],
     "layout": "full",
-    "isImageCarousel":false
+    "isImageCarousel": false
   },
   {
     "id": 3,
@@ -64,7 +62,7 @@
     ],
     "images": [],
     "layout": "full",
-    "isImageCarousel":true
+    "isImageCarousel": true
   },
   {
     "id": 4,
@@ -79,7 +77,7 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/static.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/static.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -103,67 +101,67 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0356.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%201/IMG_0356.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0374.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%201/IMG_0374.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0507.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%201/IMG_0507.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0560.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%201/IMG_0560.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0572.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%201/IMG_0572.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0641.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%201/IMG_0641.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0678.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%201/IMG_0678.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0714.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%201/IMG_0714.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0773.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%201/IMG_0773.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0789.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%201/IMG_0789.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_0821.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%201/IMG_0821.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_4668.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%201/IMG_4668.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%201/IMG_4691.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%201/IMG_4691.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -183,46 +181,47 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_3443.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%202/IMG_3443.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_3764.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },{
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_3941.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%202/IMG_3764.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_4826.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%202/IMG_3941.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_4919.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%202/IMG_4826.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_4981.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%202/IMG_4919.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_5016.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%202/IMG_4981.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_5165.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%202/IMG_5016.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%203/carousel%202/IMG_5980.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%202/IMG_5165.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%203/carousel%202/IMG_5980.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -244,37 +243,37 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/stories%204%20carousel%201%20/IMG_0450.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%204/stories%204%20carousel%201%20/IMG_0450.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/stories%204%20carousel%201%20/IMG_0560.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%204/stories%204%20carousel%201%20/IMG_0560.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/stories%204%20carousel%201%20/IMG_2145.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%204/stories%204%20carousel%201%20/IMG_2145.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/stories%204%20carousel%201%20/IMG_2230.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%204/stories%204%20carousel%201%20/IMG_2230.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/stories%204%20carousel%201%20/IMG_4540.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%204/stories%204%20carousel%201%20/IMG_4540.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/stories%204%20carousel%201%20/IMG_5191.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%204/stories%204%20carousel%201%20/IMG_5191.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/stories%204%20carousel%201%20/IMG_5200.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%204/stories%204%20carousel%201%20/IMG_5200.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -293,27 +292,27 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/stories%204%20carousel%202/stories%204%20carousel%202/IMG_0475.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%204/stories%204%20carousel%202/stories%204%20carousel%202/IMG_0475.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/stories%204%20carousel%202/stories%204%20carousel%202/IMG_0685.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%204/stories%204%20carousel%202/stories%204%20carousel%202/IMG_0685.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/stories%204%20carousel%202/stories%204%20carousel%202/IMG_0925.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%204/stories%204%20carousel%202/stories%204%20carousel%202/IMG_0925.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/stories%204%20carousel%202/stories%204%20carousel%202/IMG_0954.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%204/stories%204%20carousel%202/stories%204%20carousel%202/IMG_0954.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/stories%204%20carousel%202/stories%204%20carousel%202/IMG_5472.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%204/stories%204%20carousel%202/stories%204%20carousel%202/IMG_5472.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
@@ -343,7 +342,7 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%204/IMG_1114.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%204/IMG_1114.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -362,57 +361,57 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/stories%205%20carousel%201/IMG_1555.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%205/stories%205%20carousel%201/IMG_1555.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/stories%205%20carousel%201/IMG_2139.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%205/stories%205%20carousel%201/IMG_2139.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/stories%205%20carousel%201/IMG_2581.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%205/stories%205%20carousel%201/IMG_2581.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/stories%205%20carousel%201/IMG_2592.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%205/stories%205%20carousel%201/IMG_2592.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/stories%205%20carousel%201/IMG_2693.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%205/stories%205%20carousel%201/IMG_2693.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/stories%205%20carousel%201/IMG_3099.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%205/stories%205%20carousel%201/IMG_3099.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/stories%205%20carousel%201/IMG_3234.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%205/stories%205%20carousel%201/IMG_3234.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/stories%205%20carousel%201/IMG_3269.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%205/stories%205%20carousel%201/IMG_3269.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/stories%205%20carousel%201/IMG_3275.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%205/stories%205%20carousel%201/IMG_3275.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/stories%205%20carousel%201/IMG_3308.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%205/stories%205%20carousel%201/IMG_3308.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/stories%205%20carousel%201/IMG_3562.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%205/stories%205%20carousel%201/IMG_3562.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -431,12 +430,12 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/stories%205%20crousel%202/IMG_1704.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%205/stories%205%20crousel%202/IMG_1704.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%205/stories%205%20crousel%202/IMG_1934.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%205/stories%205%20crousel%202/IMG_1934.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -457,7 +456,7 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/static.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/static.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -492,27 +491,27 @@
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%201/1.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      }, 
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%201/2.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%201/1.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%201/3.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%201/2.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%201/4.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%201/3.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%201/5.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%201/4.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%201/5.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -521,19 +520,18 @@
     "imagePosition": "right",
     "isImageCarousel": true,
     "leftSize": "lg:w-1/3",
-    "rightSize":"lg:w-2/3",
+    "rightSize": "lg:w-2/3",
     "isTwoImageWidth": true
   },
   {
-    "id":"14",
+    "id": "14",
     "pageId": 6,
     "title": "",
     "subtitle": "",
     "content": [
       "The 'halo' collection incorporates premium corporate-grade fabrics, advances a palate of pressed face powders and their application techniques, ironing of all the component pieces, extensive use of the 'structured lapel', accessorized accordingly, and a more expressive coif."
     ],
-    "images": [
-    ],
+    "images": [],
     "layout": "full"
   },
   {
@@ -546,82 +544,82 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_2214.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_2214.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_2259.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_2259.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_2274.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_2274.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_2325.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_2325.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_2416.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_2416.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_2463.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_2463.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_2480.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_2480.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_2998.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_2998.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_3514.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_3514.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_3700.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_3700.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_3850.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_3850.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_3935.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_3935.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_3972.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_3972.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_3979.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_3979.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_4251.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_4251.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206/stories%206%20carousel%202/IMG_5352.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206/stories%206%20carousel%202/IMG_5352.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -640,37 +638,37 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206%20carousel%203/IMG_2440.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206%20carousel%203/IMG_2440.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206%20carousel%203/IMG_2635.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206%20carousel%203/IMG_2635.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206%20carousel%203/IMG_2654.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206%20carousel%203/IMG_2654.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206%20carousel%203/IMG_2729.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206%20carousel%203/IMG_2729.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206%20carousel%203/IMG_2851.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206%20carousel%203/IMG_2851.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206%20carousel%203/IMG_3024.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206%20carousel%203/IMG_3024.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%206%20carousel%203/IMG_5820.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%206%20carousel%203/IMG_5820.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -690,32 +688,32 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%207/stories%207%20carousel%201/IMG_2516.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%207/stories%207%20carousel%201/IMG_2516.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%207/stories%207%20carousel%201/IMG_2802.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%207/stories%207%20carousel%201/IMG_2802.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%207/stories%207%20carousel%201/IMG_2836.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%207/stories%207%20carousel%201/IMG_2836.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%207/stories%207%20carousel%201/IMG_2921.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%207/stories%207%20carousel%201/IMG_2921.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%207/stories%207%20carousel%201/IMG_2940.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%207/stories%207%20carousel%201/IMG_2940.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%207/stories%207%20carousel%201/IMG_3508.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%207/stories%207%20carousel%201/IMG_3508.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -734,7 +732,7 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%207/IMG_2960.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%207/IMG_2960.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -753,7 +751,7 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%207/static.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%207/static.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -772,22 +770,22 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%208/carousel%201/IMG_4754.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%208/carousel%201/IMG_4754.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%208/carousel%201/IMG_3762.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%208/carousel%201/IMG_3762.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%208/carousel%201/IMG_3795.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%208/carousel%201/IMG_3795.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%208/carousel%201/IMG_3894.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%208/carousel%201/IMG_3894.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -806,27 +804,27 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%208/stories%208%20carousel%202/IMG_3781.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%208/stories%208%20carousel%202/IMG_3781.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%208/stories%208%20carousel%202/IMG_2397.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%208/stories%208%20carousel%202/IMG_2397.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%208/stories%208%20carousel%202/IMG_3434.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%208/stories%208%20carousel%202/IMG_3434.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%208/stories%208%20carousel%202/IMG_3448.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%208/stories%208%20carousel%202/IMG_3448.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%208/stories%208%20carousel%202/IMG_3659.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%208/stories%208%20carousel%202/IMG_3659.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -846,7 +844,7 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%208/static.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%208/static.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -866,82 +864,82 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_3927.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_3927.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_4737.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_4737.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_4763.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_4763.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_4785.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_4785.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_4854.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_4854.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_4876.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_4876.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_5084.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_5084.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_5212.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_5212.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_5259.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_5259.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_5295.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_5295.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_5417.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_5417.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_5589.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_5589.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_5661.jpg",
-        "isVideo": false,
-        "borderRadius": "1rem"
-      },      
-      {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_5742.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_5661.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_5765.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_5742.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%201/IMG_5774.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_5765.jpg",
+        "isVideo": false,
+        "borderRadius": "1rem"
+      },
+      {
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%201/IMG_5774.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -961,7 +959,7 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/bluePair.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/bluePair.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -970,7 +968,7 @@
     "imagePosition": "left",
     "isImageCarousel": true,
     "leftSize": "lg:w-2/3",
-    "rightSize":"lg:w-1/3",
+    "rightSize": "lg:w-1/3",
     "isTwoImageWidth": true
   },
   {
@@ -984,17 +982,17 @@
     ],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%202/IMG_5485.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%202/IMG_5485.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%202/IMG_5557.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%202/IMG_5557.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%209/stories%209%20carousel%202/IMG_5564.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%209/stories%209%20carousel%202/IMG_5564.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }
@@ -1005,7 +1003,7 @@
   },
   {
     "id": 26,
-    "pageId":10,
+    "pageId": 10,
     "title": "SPA, HAIR , MAKEUP FOR  THE STATIC CENTENARIAN WOMAN...",
     "subtitle": "",
     "content": [
@@ -1034,7 +1032,6 @@
       "Had the attendant dressed her in a blouse or tee with high polyester or rayon content, additional attention is required as its lower coefficient of friction would allow my layered efforts to slip into unacceptability. All the while hoping the model won't succumb to a sneeze or itch. And for these few wonderful minutes, everything is bliss. Another memory is born.",
       "And had the day started with a chill, the attendant may have added a sweater to her ensemble. The extra thickness of fabric under my additional layering may look odd, so I'd unbutton the sweater and gently tug until it was secure off her shoulders.",
       "Manmade fibre blouses, whether long sleeve or mid, could be a valid candidate as an ongoing staple. Collars and collar stands add unwanted complexity to the styling process. Long sleeves are a bonus as they can be wrapped around the neck to appear as a matching scarf. But should there be a cuff and placket, ensure it doesn't make it into the photo frame. And from my perch, blouses fall into two categories: the obvious and the not-so-obvious being front button units which requires laying it on her chest backwards with the shoulder seams lined up exactly where they’d otherwise be. The ever-present scarf hides the gaps and tames any wave in the fabric."
-
     ],
     "images": [],
     "layout": "full",
@@ -1049,12 +1046,12 @@
     "content": [],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2010/static%201.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2010/static%201.jpg",
         "isVideo": false,
         "description": "Long sleeves are a bonus as they can be wrapped around the neck to appear as a matching scarf. But should there be a cuff and placket, ensure it doesn't make it into the photo frame."
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2010/static%202.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2010/static%202.jpg",
         "isVideo": false,
         "description": "And from my perch, blouses fall into two categories: the obvious and the not-so-obvious being front button units which requires laying it on her chest backwards with the shoulder seams lined up exactly where they'd otherwise be. The ever-present scarf hides the gaps and tames any wave in the fabric."
       }
@@ -1084,17 +1081,17 @@
     "content": [],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2010/static%203.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2010/static%203.jpg",
         "isVideo": false,
         "description": "Defining a shoulder line is surprisingly important. Layering on a wide scarf over her shoulders may suggest a poncho if the camera frame is too wide ."
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2010/static%204.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2010/static%204.jpg",
         "isVideo": false,
         "description": "Replicating the technique, but with a beautiful unstructured lightweight fabric, may suggest the classy grandmother of a linebacker."
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2010/static%205.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2010/static%205.jpg",
         "isVideo": false,
         "description": "And then there is surplus fabric clumped up by the wheelchair grip hinting at a 80s soap tv icon with pouffy sleeves."
       }
@@ -1122,7 +1119,7 @@
     "content": [],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011/IMG_0396.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2011/IMG_0396.jpg",
         "isVideo": false,
         "description": "IMG 0396",
         "padding": "none"
@@ -1169,12 +1166,12 @@
     "content": [],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011/static%201.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2011/static%201.jpg",
         "isVideo": false,
         "description": ""
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011/static%202.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2011/static%202.jpg",
         "isVideo": false,
         "description": ""
       }
@@ -1192,8 +1189,7 @@
       "My preference is to position mom's wheelchair a few degrees off straight on to the camera lens. While one wheelchair grip remains out of frame the other is behind her neck. Occasionally, a grip does appear because that particular photo was the best of the daily batch.",
       "Loiter a bit ensuring any errant hairs are tucked out of sight. The model is patient and welcomes all the fussing. The stylist enjoys doing all the fussing. The photographer is happy to linger as the model succumbs to an occasional catnap. And when the model is ready for her closeup, a little fine tuning is all that is required."
     ],
-    "images": [
-    ],
+    "images": [],
     "layout": "full",
     "isImageCarousel": false
   },
@@ -1208,8 +1204,7 @@
       "Mom's concept of a camera is what dad would have had in the old days: a 35mm unit with an abundance of levers and dials. My handheld iPhone SE doesn't correlate with her, so after snapping a few photos, will the turn the phone around and show her the current batch of pics. She nods affirmatively.",
       "Sitting at a distance and zooming in distorts her image, particularly if the lens is positioned low to avoid the wheelchair grips forever lurking in the background; sitting too close may allow the frame to include vinyl wallpaper beyond the confines of the floral print. I think I prefer sitting close - kneecap to kneecap - to the model and zooming in less giving her a trimmer, more natural, appearance."
     ],
-    "images": [
-    ],
+    "images": [],
     "layout": "full",
     "isImageCarousel": false
   },
@@ -1218,7 +1213,7 @@
     "pageId": 11,
     "title": "CONVERSING WITH A CENTENARIAN WOMAN WITH MEMORY ISSUES...",
     "subtitle": "",
-    "content": [      
+    "content": [
       "What has made the most profound difference is communicating to her about things that would interest her. Even try things from the past. Keep names of family members in the conversation (even those who have gone ahead), chat about the weather or the changing seasons. Showing her the photo array of her own photos on my phone often generates warm recognition. I point to a photo, then point to her, and she likely responds affirmatively. ",
       "Viewing this array in its entirety has been somewhat of a revelation to me as it relates to my connection with my mom. While happy to visit each day, and continue the tradition of serving a freshly brewed cup of coffee, her natural facial expression reflects the natural reality of her parallel experience. And keeping in mind that living in a semi-private room within a long term care facility requires some adjustments.",
       "Later photos have her engaged with the lens. To get there, I would chatter about the makeup and how it would go with the day's colour pick, chatter about the styling mousse and the technique for applying it. Seems that talented stylists and barbers have a natural gift of the gab. It can be kind of therapeutic, I guess.",
@@ -1226,8 +1221,7 @@
       "Blah. Blah. Blah. That word salad makes little sense. Let me read this section again. Blah. Blah. Blah. Geez. Come to think of it, is this an essay? Or a novella? Or a novelette? Well, to be sure, there is no fiction contained herein. There's likely a total word count that defines its category, and luckily, I know too few of them for this effort to inadvertently end up as a novel.",
       "Anyway, I digress. Put another way: While seemingly content, or perhaps resolved, in her current circumstances, mom's core happiness can be gleaned by perusing her facial expressions: boredom, gradients of discomfort, and contentment are normal and span vast swaths of the photo array. But the lens would occasional capture a glimpse of glee or whimsey that, in itself, would elevate everything else to a whole new level. Which is all fine and good, but there just had to be more to it. And it came by means of things non-verbal: even a touch of the shoulder is meaningful. And the concept of a simple touch was eventually reciprocated. When I'd be fussing at her neckline trying to get a scarf to drape just so, she would lean her cheek to gently caress the back of my hand. Another memory is born."
     ],
-    "images": [
-    ],
+    "images": [],
     "layout": "full",
     "isImageCarousel": false
   },
@@ -1243,8 +1237,7 @@
       "A shout out to a special Christmas Angel. This lovely person gifted mom with a bed jacket, a shawl and a blanket. Thank you.",
       "A shout out to Warren, oracle of Omaha and his buddy Charlie. It works. Thank you."
     ],
-    "images": [
-    ],
+    "images": [],
     "layout": "full",
     "isImageCarousel": false
   },
@@ -1259,8 +1252,7 @@
       "My presence in the universe of social media is scant.",
       "And I possess a very dry sense of humour. Somewhat akin to skipping the vermouth."
     ],
-    "images": [
-    ],
+    "images": [],
     "layout": "full",
     "isImageCarousel": false
   },
@@ -1274,8 +1266,7 @@
       "This read-only essay is not structured for reader comments. If you were inclined to comment, instead how about doing something nice for an elder today? And again tomorrow. Repeat.",
       "'Catherine of Viceroy': feel free to share this search phrase amongst your friends and family who may enjoy the vignette. Over time, it will be interesting to see where serendipity takes this project."
     ],
-    "images": [
-    ],
+    "images": [],
     "layout": "full",
     "isImageCarousel": false
   },
@@ -1284,42 +1275,40 @@
     "pageId": 11,
     "title": "",
     "subtitle": "",
-    "content": [
-      
-    ],
+    "content": [],
     "images": [
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011%20slides/post%208.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2011%20slides/post%208.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011%20slides/post%201.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2011%20slides/post%201.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011%20slides/post%202.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2011%20slides/post%202.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011%20slides/post%203.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2011%20slides/post%203.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011%20slides/post%204.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2011%20slides/post%204.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011%20slides/post%205.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2011%20slides/post%205.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       },
       {
-        "url": "https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/others/pg%2011%20slides/post%207.jpg",
+        "url": "BUCKET_URL_PLACEHOLDER/others/pg%2011%20slides/post%207.jpg",
         "isVideo": false,
         "borderRadius": "1rem"
       }

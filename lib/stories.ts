@@ -1,4 +1,4 @@
-import stories from "@/data/stories.json";
+import { getStories } from "./data-utils";
 
 export interface StoryImage {
   url: string;
@@ -28,9 +28,9 @@ export interface Story {
 }
 
 export function getAllStories(): Story[] {
-  return stories as Story[];
+  return getStories() as Story[];
 }
 
 export function getStoryById(id: string): Story | undefined {
-  return (stories as Story[]).find((story) => story.id === Number(id));
+  return (getStories() as Story[]).find((story) => story.id === Number(id));
 }
