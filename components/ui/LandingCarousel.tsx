@@ -74,7 +74,7 @@ export default function LandingCarousel({
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    audioRef.current = new Audio('https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/Landing%20Page/music_for_creators-never-surrender-127158.mp3');
+    audioRef.current = new Audio('https://pub-782ad05e2fa6419ab14996b34b3da192.r2.dev/landing/music_for_creators-never-surrender-127158.mp3');
     audioRef.current.loop = false;
     audioRef.current.volume = 0.5;
 

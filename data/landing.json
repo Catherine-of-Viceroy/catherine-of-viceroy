@@ -1,158 +1,158 @@
 [
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/_white%20pearls%201%20v2.mp4",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/_white%20pearls%201%20v2.mp4",
     "alt": "video",
     "isVideo": true,
     "isVertical": true,
     "randomizeOrder": false
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/white%20pearls%202_v2.mp4",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/white%20pearls%202_v2.mp4",
     "alt": "Landing video 6",
     "isVideo": true,
     "randomizeOrder": false
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/car%20ride.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/car%20ride.jpg",
     "alt": "Landing image car ride",
     "isVideo": false,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/gold.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/gold.jpg",
     "alt": "Landing image gold",
     "isVideo": false,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/04-2.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/04-2.jpg",
     "alt": "Landing image 4-2",
     "isVideo": false,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/05-2.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/05-2.jpg",
     "alt": "Landing image 5-2",
     "isVideo": false,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/posh.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/posh.jpg",
     "alt": "Landing image posh",
     "isVideo": false,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/06-2.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/06-2.jpg",
     "alt": "Landing image 6-3",
     "isVideo": false,
     "randomizeOrder": false
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/wink_c.mp4",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/wink_c.mp4",
     "alt": "Landing video 7",
     "isVideo": true,
     "isVertical": true,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/blue_c.mp4",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/blue_c.mp4",
     "alt": "Landing video blue",
     "isVideo": true,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/opera_c.mp4",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/opera_c.mp4",
     "alt": "Landing video opera",
     "isVideo": true,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/perfume%20ad.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/perfume%20ad.jpg",
     "alt": "Landing image perfume ad",
     "isVideo": false,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/salmon_c.mp4",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/salmon_c.mp4",
     "alt": "Landing video salmon",
     "isVideo": true,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/architecture_c.mp4",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/architecture_c.mp4",
     "alt": "Landing video architecture",
     "isVideo": true,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/paisly.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/paisly.jpg",
     "alt": "Landing image paisly",
     "isVideo": false,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/tea%20house_c.mp4",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/tea%20house_c.mp4",
     "alt": "Landing video tea house",
     "isVideo": true,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/white_c.mp4",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/white_c.mp4",
     "alt": "Landing video white",
     "isVideo": true,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/purple_c.mp4",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/purple_c.mp4",
     "alt": "Landing video purple",
     "isVideo": true,
     "randomizeOrder": false
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/black_c.mp4",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/black_c.mp4",
     "alt": "Landing video black",
     "isVideo": true,
     "randomizeOrder": false
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/blue_painting.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/blue_painting.jpg",
     "alt": "Landing image blue painting",
     "isVideo": false,
     "randomizeOrder": true
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/02.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/02.jpg",
     "alt": "Landing image 2",
     "isVideo": false,
     "randomizeOrder": false
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/03.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/03.jpg",
     "alt": "Landing image 3",
     "isVideo": false,
     "randomizeOrder": false
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/04.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/04.jpg",
     "alt": "Landing image 4",
     "isVideo": false,
     "randomizeOrder": false
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/05.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/05.jpg",
     "alt": "Landing image 5",
     "isVideo": false,
     "randomizeOrder": false
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/white%20pearls_00191.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/white%20pearls_00191.jpg",
     "alt": "Landing image 7",
     "isVideo": false,
     "randomizeOrder": false
   },
   {
-    "url": "BUCKET_URL_PLACEHOLDER/Landing%20Page/final%20frame.jpg",
+    "url": "BUCKET_URL_PLACEHOLDER/landing/final%20frame.jpg",
     "alt": "Landing image final frame",
     "isVideo": false,
     "randomizeOrder": false,

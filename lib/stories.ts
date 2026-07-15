@@ -3,20 +3,27 @@ import { getStories } from "./data-utils";
 export interface StoryImage {
   url: string;
   isVideo: boolean;
+  alt?: string;
   description?: string;
+  borderRadius?: string;
+  width?: string | number;
+  height?: string | number;
+  padding?: string;
 }
 
-export type StoryLayout =
-  | "half"
-  | "full"
-  | "two-column-cards"
-  | "three-column-cards"
-  | "single-card";
+export interface LastItemHandle {
+  autoReturn?: boolean;
+  animation?: string;
+  duration?: number;
+  fadeDuration?: number;
+}
 
-export type ImagePosition = "left" | "right";
+export type StoryLayout = "half" | "full" | "column-cards";
+
+export type ImagePosition = "left" | "right" | "center";
 
 export interface Story {
-  id: number;
+  id: string | number;
   pageId: number;
   title: string;
   subtitle: string;
@@ -24,7 +31,12 @@ export interface Story {
   images: StoryImage[];
   layout: StoryLayout;
   imagePosition?: ImagePosition;
-  isImageCarousel: boolean;
+  isImageCarousel?: boolean;
+  autoSlide?: boolean;
+  isTwoImageWidth?: boolean;
+  leftSize?: string;
+  rightSize?: string;
+  lastItemHandle?: LastItemHandle;
 }
 
 export function getAllStories(): Story[] {

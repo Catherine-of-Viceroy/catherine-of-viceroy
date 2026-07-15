@@ -1,6 +1,6 @@
 import Header from "@/components/ui/Header";
 import SplitLayout from "@/components/layout/SplitLayout";
-import { getStories } from "@/lib/data-utils";
+import { getAllStories } from "@/lib/stories";
 import Pagination from "@/components/ui/Pagination";
 import ImageCarousel from "@/components/ui/ImageCarousel";
 import Card from "@/components/ui/Card";
@@ -10,24 +10,24 @@ interface StoryPageProps {
 
 export async function generateStaticParams() {
   // Get unique pageIds from stories data
-  const contentData = getStories();
-  const uniquePageIds = [...new Set(contentData.map((story: any) => story.pageId))];
-  return uniquePageIds.map((pageId: any) => ({
+  const contentData = getAllStories();
+  const uniquePageIds = [...new Set(contentData.map((story) => story.pageId))];
+  return uniquePageIds.map((pageId) => ({
     id: pageId.toString(),
   }));
 }
 
 export default async function StoryPage({ params }: StoryPageProps) {
   const { id } = await params;
-  const contentData = getStories();
-  const story = contentData.filter((story: any) => story.pageId === parseInt(id));
+  const contentData = getAllStories();
+  const story = contentData.filter((story) => story.pageId === parseInt(id));
 
   const renderContent = () => {
     if (story.length === 0) {
       return <div>Story not found</div>;
     }
     return story.map((story) => {
-      const hasNoPadding = story.images?.some((img: { padding?: string }) => img.padding === "none");
+      const hasNoPadding = story.images.some((image) => image.padding === "none");
       return (
       <div key={story.id} className={`w-full ${hasNoPadding ? "" : "py-10"}`}>
       {story.layout == "full" && (
@@ -59,9 +59,8 @@ export default async function StoryPage({ params }: StoryPageProps) {
                 {story.images
                   .filter((image) => image.url)
                   .map((image, index) => {
-                    const img = image as { url: string; borderRadius?: string; width?: string | number; height?: string | number };
-                    const width = img.width ?? 400;
-                    const height = img.height ?? 600;
+                    const width = image.width ?? 400;
+                    const height = image.height ?? 600;
                     return (
                       <img
                         key={index}
@@ -70,7 +69,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
                         width={width}
                         height={height}
                         className="object-cover"
-                        style={{ borderRadius: img.borderRadius ?? "0" }}
+                        style={{ borderRadius: image.borderRadius ?? "0" }}
                       />
                     );
                   })}
@@ -103,9 +102,8 @@ export default async function StoryPage({ params }: StoryPageProps) {
                 {story.images
                   .filter((image) => image.url)
                   .map((image, index) => {
-                    const img = image as { url: string; borderRadius?: string; width?: string | number; height?: string | number };
-                    const width = img.width ?? 400;
-                    const height = img.height ?? 600;
+                    const width = image.width ?? 400;
+                    const height = image.height ?? 600;
                     return (
                       <img
                         key={index}
@@ -114,7 +112,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
                         width={width}
                         height={height}
                         className="object-cover"
-                        style={{ borderRadius: img.borderRadius ?? "0" }}
+                        style={{ borderRadius: image.borderRadius ?? "0" }}
                       />
                     );
                   })}
@@ -136,9 +134,8 @@ export default async function StoryPage({ params }: StoryPageProps) {
               {story.images
                 .filter((image) => image.url)
                 .map((image, index) => {
-                  const img = image as { url: string; borderRadius?: string; width?: string | number; height?: string | number };
-                  const width = img.width ?? 400;
-                  const height = img.height ?? 600;
+                  const width = image.width ?? 400;
+                  const height = image.height ?? 600;
                   return (
                     <img
                       key={index}
@@ -147,7 +144,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
                       width={width}
                       height={height}
                       className="object-cover"
-                      style={{ borderRadius: img.borderRadius ?? "0" }}
+                      style={{ borderRadius: image.borderRadius ?? "0" }}
                     />
                   );
                 })}
