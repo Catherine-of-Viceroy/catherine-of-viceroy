@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
-import { Play } from "lucide-react";
+import { Play, RotateCcw } from "lucide-react";
 import { shuffleRandomizableItems } from "@/lib/utils";
 
 interface CarouselItem {
@@ -242,7 +242,7 @@ export default function LandingCarousel({
         </button>
       </div>
       <div
-        className="relative mx-auto cursor-pointer"
+        className={`relative mx-auto ${hasEnded ? "cursor-default" : "cursor-pointer"}`}
         style={{ width: "870px", maxWidth: "100%", height: "600px", maxHeight: "calc(100vw * 0.6897)" }}
         onClick={handleTap}
       >
@@ -292,40 +292,72 @@ export default function LandingCarousel({
           ))}
         </div>
 
-        {/* Progress Dots - use real index
-        {validItems.length > 1 && (
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-10">
-            {validItems.map((_, index) => (
-              <button
-                key={index}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setCurrentIndex(index);
-                  setIsLoading(true);
-                }}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentIndex
-                    ? "bg-white"
-                    : "bg-white/50 hover:bg-white/70"
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
-        )} */}
-        {/* Music control button - top right */}
-
-        {/* Play icon overlay when paused or ended */}
-        {(isPaused || showPlayButton) && (
-          <div className="absolute inset-0 flex items-center justify-center z-20">
-            <button
-              onClick={hasEnded ? handleReplay : undefined}
-              className={`p-4 rounded-full bg-black/40 ${hasEnded ? 'cursor-pointer' : 'pointer-events-none'}`}
-            >
+        {/* Play icon overlay when paused mid-carousel */}
+        {isPaused && !hasEnded && (
+          <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+            <div className="p-4 rounded-full bg-black/40">
               <Play size={48} className="text-white" fill="white" />
-            </button>
+            </div>
           </div>
         )}
+
+        {/* End screen: credits, CTA, YouTube link, and replay */}
+        <div
+          className={`absolute inset-0 z-20 bg-black transition-opacity duration-[2000ms] ease-in-out ${showPlayButton ? "pointer-events-auto" : "pointer-events-none"}`}
+          style={{ opacity: hasEnded ? 1 : 0 }}
+          aria-hidden={!hasEnded}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="absolute inset-0 flex flex-col items-center justify-center font-[family-name:var(--font-avenir)] text-white px-6">
+            <button
+              onClick={handleReplay}
+              className="mb-10 flex items-center justify-center w-10 h-10 rounded-full border border-white text-white hover:bg-white hover:text-black transition-colors cursor-pointer"
+              aria-label="Replay carousel"
+              tabIndex={showPlayButton ? 0 : -1}
+            >
+              <RotateCcw size={16} strokeWidth={1.5} />
+            </button>
+
+            <p
+              className="mb-0 font-normal text-white"
+              style={{ fontSize: "25px", lineHeight: 1.2 }}
+            >
+              Design by
+            </p>
+            <p
+              className="mb-0 mt-[6px] font-bold text-white text-center"
+              style={{ fontSize: "30px", lineHeight: 1.25 }}
+            >
+              Legacy Portraits by Chris
+            </p>
+
+            <a
+              href="https://legacy-portraits.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-[52px] border border-white rounded-[6px] text-white font-normal hover:bg-white hover:text-black transition-colors"
+              style={{ fontSize: "16px", lineHeight: 1.2, padding: "10px 40px" }}
+              tabIndex={showPlayButton ? 0 : -1}
+              onClick={(e) => e.stopPropagation()}
+            >
+              Find out more
+            </a>
+
+            <a
+              href="https://youtu.be/mYu7BZuFlj8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-[72px] font-normal text-white text-center hover:underline"
+              style={{ fontSize: "20px", lineHeight: 1.45 }}
+              tabIndex={showPlayButton ? 0 : -1}
+              onClick={(e) => e.stopPropagation()}
+            >
+              Styling the modern centenarian woman:
+              <br />
+              watch the story of Catherine of Viceroy on YouTube
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
