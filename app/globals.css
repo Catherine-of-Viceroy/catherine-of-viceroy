@@ -12,6 +12,7 @@
   --font-mono: var(--font-geist-mono);
   --font-roboto: 'Roboto', sans-serif;
   --font-georgia: Georgia, serif;
+  --font-avenir: Avenir, 'Avenir Next', 'Nunito Sans', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
