@@ -13,6 +13,7 @@
   --font-roboto: 'Roboto', sans-serif;
   --font-georgia: Georgia, serif;
   --font-avenir: Avenir, 'Avenir Next', 'Nunito Sans', sans-serif;
+  --font-nunito-sans: 'Nunito Sans', 'Nunito Sans Fallback', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

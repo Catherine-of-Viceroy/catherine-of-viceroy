@@ -167,6 +167,11 @@ export default async function StoryPage({ params }: StoryPageProps) {
       <Header />
       {renderContent()}
       <Pagination currentPage={parseInt(id)} totalPages={11} />
+      {parseInt(id) == 11 && (
+        <div className="w-full py-10 text-center">
+          <p className="font-[family-name:var(--font-nunito-sans)]">Design by: <a href="https://legacy-portraits.vercel.app/" target="_blank" title="legacy portlet" className="underline">Legacy Portraits by Chris</a></p>
+        </div>
+      )}
     </div>
   );
 }
