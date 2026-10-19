@@ -344,7 +344,7 @@ export default function LandingCarousel({
             </a>
 
             <a
-              href="https://youtu.be/mYu7BZuFlj8"
+              href="https://youtu.be/ryfWwug4HzM?si=rRYx7zKzinTgcV1A"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-[72px] font-normal text-white text-center hover:underline"
